@@ -2147,26 +2147,3 @@ div.admin-panel .description {
 
 
 
-
-
-/************************New CSS*************/
-
-
-.block-views-block-ipm-clubs-block-1-2 {
-
-        background: #fff;
-}
-#block-views-block-ipm-clubs-block-1-2 {
-	width: 332px;
-    height: 150px;
-    background: #fff;
-    box-shadow: 0 0 3px #999;
-    border-radius: 3px;
-    padding: 11px;
-    float: left;
-}
-#block-views-block-ipm-clubs-block-1-2 ,
-#block-views-block-pgp-club-block-1{
-	width: 50%;
-    float: left;
-}

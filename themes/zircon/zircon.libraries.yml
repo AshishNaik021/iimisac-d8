@@ -33,6 +33,7 @@ global-styling:
     js/carousel.js: {}
     js/zircon.js: {}
     js/fix_script.js: {}
+    js/customize.js: {}
   dependencies:
     - core/jquery
     - core/drupal.ajax

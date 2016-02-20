@@ -148,12 +148,7 @@
 }
 /* line 93, ../sass/block.scss */
 #main-menu .container {
-  background-color: #555555;
-  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#373a3d), to(#282a2c));
-  background: -webkit-linear-gradient(top, #373a3d, #282a2c);
-  background: -moz-linear-gradient(top, #373a3d, #282a2c);
-  background: -ms-linear-gradient(top, #373a3d, #282a2c);
-  background: -o-linear-gradient(top, #373a3d, #282a2c);
+  background-color:#a7c324;
   height: 45px;
 }
 /* line 103, ../sass/block.scss */
@@ -179,25 +174,18 @@
 }
 /* line 120, ../sass/block.scss */
 #main-menu .container ul.menu li .is-active {
-  background-color: #a01300;
-  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#a01300), to(#282a2c));
-  background: -webkit-linear-gradient(top, #c01700, #a01300);
-  background: -moz-linear-gradient(top, #c01700, #a01300);
-  background: -ms-linear-gradient(top, #c01700, #a01300);
-  background: -o-linear-gradient(top, #c01700, #a01300);
+  background-color: #ff9c00;
+ 
 }
 /* line 129, ../sass/block.scss */
 #main-menu .container ul.menu li.menu-item--active-trail > a {
-  background-color: #a01300;
-  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#a01300), to(#282a2c));
-  background: -webkit-linear-gradient(top, #c01700, #a01300);
-  background: -moz-linear-gradient(top, #c01700, #a01300);
-  background: -ms-linear-gradient(top, #c01700, #a01300);
-  background: -o-linear-gradient(top, #c01700, #a01300);
+  background-color: #ff9c00;
+ 
 }
 /* line 138, ../sass/block.scss */
 #main-menu .container ul.menu li:first-child {
   border-left: none;
+  margin-left: 37px;
 }
 /* line 140, ../sass/block.scss */
 #main-menu .container ul.menu li:first-child > a {
@@ -208,12 +196,7 @@
 }
 /* line 149, ../sass/block.scss */
 #main-menu .container ul.menu li:hover > a, #main-menu .container ul.menu li:focus > a {
-  background-color: #a01300;
-  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#a01300), to(#282a2c));
-  background: -webkit-linear-gradient(top, #c01700, #a01300);
-  background: -moz-linear-gradient(top, #c01700, #a01300);
-  background: -ms-linear-gradient(top, #c01700, #a01300);
-  background: -o-linear-gradient(top, #c01700, #a01300);
+  background-color:#ff9c00;
 }
 /* line 157, ../sass/block.scss */
 #main-menu .container ul.menu li:hover ul.menu, #main-menu .container ul.menu li:focus ul.menu {
@@ -226,6 +209,7 @@
 /* line 164, ../sass/block.scss */
 #main-menu .container ul.menu .menu-item--expanded > a {
   padding-right: 25px;
+  background-color:#a7c324;
 }
 /* line 166, ../sass/block.scss */
 #main-menu .container ul.menu .menu-item--expanded > a:before {
@@ -247,7 +231,7 @@
   top: 45px;
   z-index: 100;
   background: #272727;
-  border: 5px solid #a01300;
+  border: 2px solid #272727;
   width: 220px;
   display: none;
 }
@@ -261,8 +245,9 @@
 }
 /* line 198, ../sass/block.scss */
 #main-menu .container ul.menu ul.menu li a {
-  color: #aaaaaa;
+  color: #fff;
   border-radius: 0;
+  background-color: #a7c324;
   padding: 7px 15px;
   text-transform: none;
   font-family: arial;
@@ -279,7 +264,7 @@
 }
 /* line 215, ../sass/block.scss */
 #main-menu .container ul.menu ul.menu li .menu-item--active-trail > a {
-  background: none;
+  background-color:#a7c324;
   color: white;
 }
 /* line 220, ../sass/block.scss */
@@ -288,7 +273,7 @@
 }
 /* line 225, ../sass/block.scss */
 #main-menu .container ul.menu ul.menu li:hover > a, #main-menu .container ul.menu ul.menu li:focus > a {
-  background: none;
+    background-color:#ff9c00;
   color: white;
 }
 /* line 228, ../sass/block.scss */
@@ -674,13 +659,8 @@
 }
 /* line 616, ../sass/block.scss */
 .sidebar h2 {
-  background-color: #555555;
-  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#373a3d), to(#282a2c));
-  background: -webkit-linear-gradient(top, #373a3d, #282a2c);
-  background: -moz-linear-gradient(top, #373a3d, #282a2c);
-  background: -ms-linear-gradient(top, #373a3d, #282a2c);
-  background: -o-linear-gradient(top, #373a3d, #282a2c);
   color: white;
+  background-color:#a7c324;
   margin: -15px -15px 15px -15px;
   padding: 10px 15px;
   text-transform: uppercase;

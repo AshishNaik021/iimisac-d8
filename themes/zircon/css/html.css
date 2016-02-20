@@ -74,7 +74,7 @@ a {
 a:hover, a:focus {
   outline: none;
   text-decoration: none;
-  color: #c01700;
+  color: #333;
 }
 
 /* line 28, ../sass/html.scss */
@@ -131,3 +131,237 @@ label {
 p {
   margin-bottom: 15px;
 }
+
+
+
+
+
+/************************Custom CSS*************/
+
+
+
+#block-views-block-ipm-club-block-1 {
+	width: 48%;
+    float: left;
+    color: #333;
+    padding: 0% 0% 3% 3%;
+	border-right: 1px solid #fff;
+    padding: 32px;
+	font-size: 20px;
+}
+#block-views-block-pgp-club-block-1{
+	width: 48%;
+	float:right;
+    color: #333;
+    padding: 0% 0% 3% 3%;
+	padding: 32px;
+	font-size: 20px;
+}
+.views-field.views-field-field-sheduled-date-time {
+    width: 47%;
+	height:100px;
+	font-family: 'Century Gothic';
+    float: left;
+    background-image:url("../../zircon/images/calendar.jpg") !important;
+    color: #333;
+	padding: 14% 0% 0% 9%;
+    margin: 1px 7px 4px -14px;
+	background-repeat: no-repeat;
+	font-weight: bold;
+}
+.views-field.views-field-field-news-image{
+	height:125px;
+	 -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all .3s ease;
+}
+.views-field.views-field-field-news-image:hover{
+	    -webkit-transform: scale(0.9);
+    -moz-transform: scale(0.9);
+    -o-transform: scale(0.9);
+    transform: scale(0.9);
+}
+
+.content .views-field-title{
+	font-size: 1.1em;
+	height: 100px;
+	width: 90%;
+}
+.content .views-field-title a:hover{
+    color: #a7c324;
+}
+.content .views-field-created {
+	color: #a7c324;
+    font-size: 12px;
+}
+.content .field-content {
+	width:82%;
+}
+.views-field-view-node a:hover{
+	color:#fff !important;
+	background: #a7c324;
+}
+.content .views-field-view-node{
+    background: #ff9c00;
+    width: 36%;
+	color:#fff !important;
+	padding: 2px 0px 0px 3px;
+}
+.content .views-field-body{
+	font-family: Arial,Helvetica,sans-serif;
+    font-size: 12px;
+     margin-top: 2px;
+    height: 83px;
+}
+th#view-title-table-column {
+      width: 36%;
+	  color: #fff;
+}
+td.views-field.views-field-title,
+td.views-field.views-field-title a {
+    font-size: 12px;
+    color: #fff !important;
+    padding: 2% 0% 2% 2%;
+    font-weight: 100;
+}
+td.views-field.views-field-comment-count,
+td.views-field.views-field-comment-count a {
+    text-align: center;
+	color:#fff;
+}
+.odd-row{
+	background: #ffb033;
+}
+.views-field.views-field-taxonomy-forums,
+.views-field.views-field-taxonomy-forums a{
+     padding: 5% 4% 5% 3%;
+	 color: #fff;
+	 font-size: 1em;
+}
+.views-field.views-field-taxonomy-forums a:hover{
+	color:#333;
+}
+#view-comment-count-table-column{
+	padding-right:9px;
+	color: #fff;
+}
+.view-title-table-column tr.odd {
+    background-color: #ffb033;
+}
+.more-link {
+	margin-right: 84px;
+    font-size: 30px;
+	color:#ff9c00 !important;
+}
+#block-views-block-discussion-forum-block-1 {
+    background-color: #ff9c00;
+	padding:0px;
+}
+.sidebar-first .views-field-title{
+	margin-left: 31px;
+}
+
+.region.region-sidebar-second .contextual{
+	border-bottom: 0;
+	border-top: 30px solid #a7c324;
+    border-right: 90px solid rgba(0,0,0,0);
+    border-left: 90px solid rgba(0,0,0,0);
+    bottom: -30px;
+    content: "";
+    display: inline-block;
+    height: 0;
+    left: 50%;
+    margin-left: -90px;
+    position: absolute;
+    width: 0;
+    margin-top: 14px;
+}
+
+#block-views-block-latest-articles-block-1.views-field.views-field-title{
+	font-size: 21px;
+    color: #333;
+}
+#block-views-block-latest-articles-block-1.views-field.views-field-title{
+	font-size:20px;
+}
+.container {
+    width: 100%;
+}
+header#header {
+   
+	height: 100px;
+}
+.site-logo img {
+    width: 212px !important;
+    margin-left: 40px;
+    margin-top: -39px;
+}
+#block-zircon-search {
+	margin: 1% 3% 0% 0%;
+}
+#main-menu .container ul.menu .menu-item--expanded{
+	background-color:#1C64A1 ! important;
+}
+#block-socialmedialinks {
+    margin-left:77%;
+}
+.views-field.views-field-field-ipm-logo,
+.views-field.views-field-field-club-logo{
+	width:60%;
+	display: inline-block;
+    padding: 10% 2% 6% 2%;
+   border: 1px solid #fff;
+	margin: 8px 8px 1px -1px;
+	background-color:#fff;
+	 -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all .3s ease;
+}
+.views-field.views-field-field-ipm-logo:hover,
+.views-field.views-field-field-club-logo:hover{
+	-webkit-transform: scale(0.9);
+    -moz-transform: scale(0.9);
+    -o-transform: scale(0.9);
+    transform: scale(0.9);
+}
+#panel_first .container {
+	background-color:#eee !important;
+}
+#block-views-block-latest-news-events-block-1 {
+	margin-top:30px;
+}
+.region.region-sidebar-second h2 {
+    background: #a7c324;
+   color: white;
+ margin: -50px -9px 20px -24px;
+  padding: 10px 15px;
+  text-transform: uppercase;
+  -webkit-border-top-left-radius: 5px;
+  -webkit-border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  font-size: 1.23em;
+    width: 75%;
+    height: 55px;
+    margin-left: 29px;
+	position:relative;
+    text-align: center;
+}
+#block-views-block-latest-news-events-block-1 {
+	border:5px solid #a7c324 ;
+}
+.region.region-slideshow {
+    height: 285px;
+}
+.views-row.views-field.views-field-body{
+	padding:1%;
+	
+}
+.views-field-view-node a{
+	color:#fff !important;
+	font-size:11px;
+}
+
+
