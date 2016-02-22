@@ -140,23 +140,28 @@ p {
 
 
 
-#block-views-block-ipm-club-block-1 {
-	width: 48%;
+#block-views-block-ipm-club-block-1-3{
+	width: 49%;
     float: left;
-    color: #333;
-    padding: 0% 0% 3% 3%;
+    color: #fff;
+    padding: 1% 0% 3% 3%;
 	border-right: 1px solid #fff;
-    padding: 32px;
 	font-size: 20px;
+	background-color:#595E61;
+	border-radius:7px;
 }
-#block-views-block-pgp-club-block-1{
-	width: 48%;
+#block-views-block-pgp-club-block-1-3{
+	width: 49%;
 	float:right;
-    color: #333;
-    padding: 0% 0% 3% 3%;
-	padding: 32px;
+    color: #fff;
+    padding: 1% 0% 3% 3%;
 	font-size: 20px;
+	background-color:#595E61;
+	border-radius:7px;
 }
+
+
+
 .views-field.views-field-field-sheduled-date-time {
     width: 47%;
 	height:100px;
@@ -285,9 +290,7 @@ td.views-field.views-field-comment-count a {
 #block-views-block-latest-articles-block-1.views-field.views-field-title{
 	font-size:20px;
 }
-.container {
-    width: 100%;
-}
+
 header#header {
    
 	height: 100px;
@@ -308,7 +311,7 @@ header#header {
 }
 .views-field.views-field-field-ipm-logo,
 .views-field.views-field-field-club-logo{
-	width:60%;
+	width:65%;
 	display: inline-block;
     padding: 10% 2% 6% 2%;
    border: 1px solid #fff;
@@ -352,8 +355,10 @@ header#header {
 #block-views-block-latest-news-events-block-1 {
 	border:5px solid #a7c324 ;
 }
+
 .region.region-slideshow {
-    height: 285px;
+    height: 390px;
+	width:100%;
 }
 .views-row.views-field.views-field-body{
 	padding:1%;
@@ -365,3 +370,47 @@ header#header {
 }
 
 
+span.fa.fa-envelope.fa-2x {
+    font-size: 10px ! important;
+}
+ul.inline li a, ul.links.inline li a {
+    display: inline-block;
+    padding: 4px 10px;
+    color: #ff9c00! important;
+	font-size: 6px! important;
+     background: #555555; 
+     vertical-align: middle; 
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+	    border-radius: 100% !important;
+}
+.views-field.views-field-field-notice-date{
+	margin-left: 27px;
+    margin-top: 11px;
+    color: #a7c324 !important;
+}
+
+.views-col.col-1,.views-col.col-2{
+    float: left;
+}
+#block-views-block-carousel-block-1-2 {
+   height: 230px;
+    background-color: #595E61;
+    padding: 6px;
+    font-size: 18px;
+    color: #fff;
+    border-radius: 6px;
+	margin-bottom: 20px;
+}
+.slick-slide.slick-active {
+	 -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all .3s ease;
+}
+.slick-slide.slick-active:hover{
+  -webkit-transform: scale(0.9);
+    -moz-transform: scale(0.9);
+    -o-transform: scale(0.9);
+    transform: scale(0.9);
+}
