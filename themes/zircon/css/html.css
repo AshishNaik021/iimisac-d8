@@ -393,11 +393,12 @@ ul.inline li a, ul.links.inline li a {
 .views-col.col-1,.views-col.col-2{
     float: left;
 }
-#block-views-block-carousel-block-1-2 {
+#block-views-block-carousel-block-1-2,
+#block-views-block-video-carousel-block-1-4 {
    height: 230px;
     background-color: #595E61;
     padding: 6px;
-    font-size: 18px;
+    font-size: 20px;
     color: #fff;
     border-radius: 6px;
 	margin-bottom: 20px;
