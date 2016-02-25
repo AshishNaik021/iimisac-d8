@@ -197,6 +197,7 @@ font-weight: bold;
 	font-weight: bold;
 }
 
+
 .views-field.views-field-field-news-image{
 	height:125px;
 	 -webkit-transition: all .3s ease;
@@ -369,7 +370,9 @@ header#header {
 #block-views-block-latest-news-events-block-1 {
 	margin-top: 28px;
 }
-
+#block-views-block-ipm-club-block-1-2 {
+	margin-top: 7px;
+}
 .region.region-sidebar-second h2 {
     background: #a7c324;
    color: white;
@@ -472,4 +475,24 @@ ul.inline .node-readmore a, ul.links.inline .node-readmore a{
 }
 .view-empty {
     display: none;
+}
+input#edit-mail {
+    width: 185px;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    -webkit-border-top-left-radius: 3px;
+    -webkit-border-bottom-left-radius: 3px;
+    color: #555555;
+    float: left;
+    height: 35px;
+    line-height: 1.6;
+    vertical-align: middle;
+}
+ input[type="submit"]{
+	background-color: #ff9c00;
+	color:#fff;
+	height:35px;
+}
+input[type="submit"]:hover{
+	background-color:#a7c324;
 }
