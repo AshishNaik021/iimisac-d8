@@ -130,6 +130,7 @@ label {
 /* line 65, ../sass/html.scss */
 p {
   margin-bottom: 15px;
+  
 }
 
 
@@ -160,9 +161,13 @@ p {
 	border-radius:7px;
 }
 
-span.views-field.views-field-title{
-width: 50%;
-font-size: 25px;
+div#block-views-block-latest-news-events-block-1 .views-field.views-field-title{
+	font-size:1.1em  !important;
+	width:200px !important ;
+}
+.views-field.views-field-field-news-events-image {
+    width: 30%;
+    float: left;
 }
 .sidebar-first.views-field.views-field-title{
   width: 50%;
@@ -170,21 +175,43 @@ font-size: 25px;
     float: left;
     height: 43px;
 }
-span.views-field.views-field-field-sheduled-date-time {
-background-image:url("../../zircon/images/calend.jpg") !important;
-width: 18%;
-height: 4px;
-font-family: 'Century Gothic';
-float: none;
-color: #333;
-padding: 1% 0% 0% 0%;
-margin: 44px 6px 4px 18px;
-background-repeat: no-repeat;
-font-weight: bold;
+.content .views-field.views-field-field-sheduled-date-time{
+	 color:#a7c324 !important;
+}
+.sidebar .views-field-title {
+    font-weight: bold;
+    font-size: 15px !important;
+	color:#55555 !important;
+}
+span.views-field.views-field-title a  {
+	 font-size: 25px;
+	 font-size: 25px;
+	 color:#a7c324 ;
+}
+.content .views-field-title {
+	 font-size: 30px;
+	  color:#a7c324 ;
+}
+.content .views-field-title a{
+	  color:#a7c324 ;
+}
+.content .views-field-title a:hover{
+	  color:#ff9c00 !important;
+}
+span.views-field.views-field-title a:hover {
+	 color:#ff9c00 !important;
 }
 
-
-.views-field.views-field-field-sheduled-date-time {
+span.views-field.views-field-field-news-image {
+    float: left;
+    width:30%;
+}
+span.views-field.views-field-field-sheduled-date-time {
+    color: #a7c324;
+    font-size: 12px;
+}
+#block-views-block-latest-news-events-block-1 .views-field.views-field-field-sheduled-date-time,
+div#block-views-block-latest-news-events-block-1-2 .views-field.views-field-field-sheduled-date-time{
     width: 47%;
 	height:100px;
 	font-family: 'Century Gothic';
@@ -196,10 +223,20 @@ font-weight: bold;
 	background-repeat: no-repeat;
 	font-weight: bold;
 }
-
-
+span.views-field.views-field-body p{
+	margin-left:0px;
+}
+.views-field.views-field-body {
+    height: 111px;
+}
+#block-views-block-latest-articles-block-1 .views-field.views-field-body  p{
+	margin-left:0px;
+}
+.views-field.views-field-body  p{
+	margin-left:37%;
+}
 .views-field.views-field-field-news-image{
-	height:125px;
+	height:111px;
 	 -webkit-transition: all .3s ease;
     -moz-transition: all .3s ease;
     -o-transition: all 0.3s ease;
@@ -212,10 +249,13 @@ font-weight: bold;
     transform: scale(0.9);
 }
 
-.content .views-field-title{
+div#block-views-block-latest-articles-block-1 .views-field-title {
 	font-size: 1.1em;
 	height: 110px;
 	width: 90%;
+}
+#block-views-block-latest-articles-block-1 .views-field-title a{
+	color:#777 !important;
 }
 .content .views-field-title a:hover{
     color: #a7c324;
@@ -231,11 +271,21 @@ font-weight: bold;
 	color:#fff !important;
 
 }
-.content .views-field-view-node{
+#block-views-block-latest-articles-block-1 .views-field-view-node {
     background: #ff9c00;
     width: 80px;
     color: #fff !important;
     padding: 3px 0px 1px 3px;
+	margin-left:0;
+   
+}
+.views-field-view-node{
+    background: #ff9c00;
+    width: 80px;
+    color: #fff !important;
+    padding: 3px 0px 1px 3px;
+	margin-left:248px;
+   
 }
 .more-link{
 	background: #ff9c00;
@@ -255,7 +305,7 @@ input#edit-submit--2{
 
 th#view-title-table-column {
       width: 36%;
-	  color: #fff;
+	  color: #fff ! important;
 }
 td.views-field.views-field-title,
 td.views-field.views-field-title a {
@@ -271,6 +321,9 @@ td.views-field.views-field-comment-count a {
 }
 .odd-row{
 	background: #ffb033;
+}
+.content .odd-row{
+	background: none;
 }
 .views-field.views-field-taxonomy-forums,
 .views-field.views-field-taxonomy-forums a{
@@ -345,7 +398,23 @@ header#header {
     margin-left:77%;
 }
 .views-field.views-field-field-ipm-logo,
-.views-field.views-field-field-club-logo{
+.views-field.views-field-field-club-logo {
+    float: left;
+	width:29%;
+     border: 1px solid #dadada;
+    padding: 2% 0% 2% 8%;
+	background-color:#fcfcfc;
+	margin: 1%;
+}
+.sidebar-second .views-field.views-field-field-ipm-logo,
+.sidebar-second .views-field.views-field-field-club-logo {
+	width:80%;
+	padding:0;
+	border:0;
+	margin: 0;
+}
+div#block-views-block-ipm-club-block-1-4 .views-field.views-field-field-ipm-logo,
+div#block-views-block-pgp-club-block-1-4 .views-field.views-field-field-club-logo{
 	width:65%;
 	display: inline-block;
     padding: 10% 2% 6% 2%;
@@ -373,7 +442,7 @@ header#header {
 #block-views-block-ipm-club-block-1-2 {
 	margin-top: 7px;
 }
-.region.region-sidebar-second h2 {
+div#block-views-block-latest-news-events-block-1 h2 {
     background: #a7c324;
    color: white;
  margin: -50px -9px 20px -24px;
@@ -381,17 +450,16 @@ header#header {
   text-transform: uppercase;
   -webkit-border-top-left-radius: 5px;
   -webkit-border-top-right-radius: 5px;
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
+  border-radius: 5px;
   font-size: 1.23em;
     width: 80%;
-    height: 55px;
+    height: 65px;
     margin-left: 23px;
 	position:relative;
     text-align: center;
 }
 
-.region.region-sidebar-second .contextual{
+#block-views-block-latest-news-events-block-1 .region-sidebar-second .contextual{
 	border-bottom: 0;
 	border-top: 30px solid #a7c324;
     border-right: 90px solid rgba(0,0,0,0);
@@ -428,7 +496,7 @@ span.fa.fa-envelope.fa-2x,
 span.fa.fa-facebook.fa-2x,
 span.fa.fa-twitter.fa-2x,
 span.fa.fa-youtube.fa-2x {
-    font-size: 10px;
+    font-size: 12px;
 }
 ul.inline .node-readmore a, ul.links.inline .node-readmore a{
 	color:#fff !important;
@@ -495,4 +563,41 @@ input#edit-mail {
 }
 input[type="submit"]:hover{
 	background-color:#a7c324;
+}
+#footer ul.menu li a.is-active {
+    color: #ff9c00 !important;
+}
+#footer ul.menu li a:hover {
+    color: #ff9c00 !important;
+}
+input#edit-preview,.form-submit {
+	background-color: #ff9c00 !important;
+}
+input#edit-preview:hover,.form-submit:hover {
+	background-color: #a7c324 !important;
+}
+
+#header .search-block-form .button{
+	background:none !important;
+}
+.content .feed-icons{
+	display:none;
+}
+span.views-field.views-field-field-company-logo {
+    height: 120px;
+    float: left;
+}
+span.views-label.views-label-field-company-name,
+span.views-label.views-label-field-club-committee-name,
+span.views-label.views-label-field-duration,
+span.views-label.views-label-field-functional-domains,
+span.views-label.views-label-field-location,
+span.views-label.views-label-field-number-of-openings,
+span.views-label.views-label-field-report,
+span.views-label.views-label-field-target-audience{
+    float: left;
+	color:#333;
+	width:24%;
+	font-size: 17px;
+    height: 18px;
 }
