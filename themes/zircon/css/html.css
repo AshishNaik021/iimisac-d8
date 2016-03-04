@@ -227,13 +227,15 @@ span.views-field.views-field-body p{
 	margin-left:0px;
 }
 .views-field.views-field-body {
-    height: 111px;
+    height: 90px;
+	color:#777 !important;
 }
 #block-views-block-latest-articles-block-1 .views-field.views-field-body  p{
 	margin-left:0px;
+	font-size:12px !important;
 }
 .views-field.views-field-body  p{
-	margin-left:37%;
+	margin-left:30%;
 }
 .views-field.views-field-field-news-image{
 	height:111px;
@@ -249,13 +251,44 @@ span.views-field.views-field-body p{
     transform: scale(0.9);
 }
 
-div#block-views-block-latest-articles-block-1 .views-field-title {
+div#block-views-block-latest-articles-block-1 .views-field-title ,
+#block-views-block-live-projects-block-1-4 .views-field-title{
 	font-size: 1.1em;
 	height: 110px;
 	width: 90%;
 }
-#block-views-block-latest-articles-block-1 .views-field-title a{
-	color:#777 !important;
+.sidebar-first span.views-label.views-label-field-functional-domains{
+	width:88% !important;
+}
+.sidebar-first #block-views-block-projects-block-1 .views-field.views-field-title {
+    width: 97%;
+	margin-left:0 !important;
+}
+#block-views-block-live-projects-block-1-4 {
+    border: 5px solid #f6f6f6;
+	padding:1%;
+	background-color:#f6f6f6;
+	border-radius:5px;
+}
+#block-views-block-live-projects-block-1-4 .views-field-title{
+	height: 60px !important;
+}
+#block-views-block-live-projects-block-1-4 .views-field.views-field-field-company-logo{
+	height: 100px !important;
+}
+#block-views-block-live-projects-block-1-4 .views-field.views-field-body p {
+	margin-left:0 !important;
+	font-size:12px !important;
+}
+#block-views-block-live-projects-block-1-4 .views-field.views-field-field-company-name{
+	width:200px;
+}
+#block-views-block-live-projects-block-1-4 .views-field.views-field-view-node{
+	margin-left:0px  !important;
+}
+#block-views-block-latest-articles-block-1 .views-field-title a,
+#block-views-block-live-projects-block-1-4 .views-field-title a{
+	color:#555 !important;
 }
 .content .views-field-title a:hover{
     color: #a7c324;
@@ -264,7 +297,7 @@ div#block-views-block-latest-articles-block-1 .views-field-title {
 	color: #a7c324;
     font-size: 12px;
 }
-.content .field-content {
+.content #block-views-block-latest-articles-block-1 .field-content {
 	width:82%;
 }
 .views-field-view-node a:hover{
@@ -406,6 +439,8 @@ header#header {
 	background-color:#fcfcfc;
 	margin: 1%;
 }
+.sidebar-first .views-field.views-field-field-ipm-logo,
+.sidebar-first .views-field.views-field-field-club-logo,
 .sidebar-second .views-field.views-field-field-ipm-logo,
 .sidebar-second .views-field.views-field-field-club-logo {
 	width:80%;
@@ -584,7 +619,7 @@ input#edit-preview:hover,.form-submit:hover {
 	display:none;
 }
 span.views-field.views-field-field-company-logo {
-    height: 120px;
+    height: 220px;
     float: left;
 }
 span.views-label.views-label-field-company-name,
@@ -600,4 +635,54 @@ span.views-label.views-label-field-target-audience{
 	width:24%;
 	font-size: 17px;
     height: 18px;
+}
+#block-views-block-live-projects-block-1-4 .views-field.views-field-title {
+	font-size:15px;
+}
+.content label.js-form-required.form-required{
+	font-size:18px;
+	color:#a7c324;
+	width:100%;
+		
+}
+.description{
+   width: 96%;
+}
+
+.content label.js-form-required.form-required:hover{
+	color:#ff9c00;
+}
+form#user-register-form,
+form#user-pass {
+    width: 50%;
+    margin: auto;
+	border:3px solid #777;
+	background-color:#fcfcfc;
+    padding: 4%;
+	border-radius:5px;
+}
+ #edit-account .form-email ,
+input#edit-name {
+	 width:95.6% !important;
+	 margin-bottom: 6px;
+ }
+ input#edit-field-first-name-0-value,
+input#edit-field-last-name-0-value,
+select#edit-field-program-name,
+select#edit-field-gender {
+    width: 214px;
+}
+div#edit-field-first-name-wrapper,
+div#edit-field-last-name-wrapper,
+#edit-field-program-name-wrapper,
+#edit-field-gender-wrapper{
+	width:50%;
+	float:left;
+}
+div#edit-field-team-member-of-wrapper,
+div#edit-field-team-member-of-ipm-club-wrapper,
+div#edit-field-ipm-committees-wrapper,
+div#edit-field-pgp-committee-wrapper  {
+    width: 25% ! important;
+    float: left ! important;
 }
