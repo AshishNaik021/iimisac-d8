@@ -148,7 +148,7 @@
 }
 /* line 93, ../sass/block.scss */
 #main-menu .container {
-  background-color:#a7c324;
+  background-color:#3498DA;
   height: 45px;
 }
 /* line 103, ../sass/block.scss */
@@ -174,12 +174,12 @@
 }
 /* line 120, ../sass/block.scss */
 #main-menu .container ul.menu li .is-active {
-  background-color: #ff9c00;
+  background-color: #006699;
  
 }
 /* line 129, ../sass/block.scss */
 #main-menu .container ul.menu li.menu-item--active-trail > a {
-  background-color: #ff9c00;
+  background-color: #006699;
  
 }
 /* line 138, ../sass/block.scss */
@@ -196,7 +196,7 @@
 }
 /* line 149, ../sass/block.scss */
 #main-menu .container ul.menu li:hover > a, #main-menu .container ul.menu li:focus > a {
-  background-color:#ff9c00;
+  background-color:#006699;
 }
 /* line 157, ../sass/block.scss */
 #main-menu .container ul.menu li:hover ul.menu, #main-menu .container ul.menu li:focus ul.menu {
@@ -209,7 +209,7 @@
 /* line 164, ../sass/block.scss */
 #main-menu .container ul.menu .menu-item--expanded > a {
   padding-right: 25px;
-  background-color:#a7c324;
+  background-color:#3498DA;
 }
 /* line 166, ../sass/block.scss */
 #main-menu .container ul.menu .menu-item--expanded > a:before {
@@ -247,7 +247,7 @@
 #main-menu .container ul.menu ul.menu li a {
   color: #fff;
   border-radius: 0;
-  background-color: #a7c324;
+  background-color: #3498DA;
   padding: 7px 15px;
   text-transform: none;
   font-family: arial;
@@ -264,7 +264,7 @@
 }
 /* line 215, ../sass/block.scss */
 #main-menu .container ul.menu ul.menu li .menu-item--active-trail > a {
-  background-color:#a7c324;
+  background-color:#3498DA;
   color: white;
 }
 /* line 220, ../sass/block.scss */
@@ -273,7 +273,7 @@
 }
 /* line 225, ../sass/block.scss */
 #main-menu .container ul.menu ul.menu li:hover > a, #main-menu .container ul.menu ul.menu li:focus > a {
-    background-color:#ff9c00;
+    background-color:#006699;
   color: white;
 }
 /* line 228, ../sass/block.scss */
@@ -660,7 +660,7 @@
 /* line 616, ../sass/block.scss */
 .sidebar h2 {
   color: white;
-  background-color:#a7c324;
+  background-color:#3498DA;
   margin: -15px -15px 15px -15px;
   padding: 10px 15px;
   text-transform: uppercase;

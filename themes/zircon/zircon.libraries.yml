@@ -34,6 +34,7 @@ global-styling:
     js/zircon.js: {}
     js/fix_script.js: {}
     js/customize.js: {}
+    js/jquery-ui.js: {}	
   dependencies:
     - core/jquery
     - core/drupal.ajax
