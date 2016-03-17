@@ -273,7 +273,7 @@ div#block-views-block-live-project-block-1 .views-field-title{
 	margin-left:0 !important;
 }
 #block-views-block-live-project-block-1 {
- 
+    margin-top: 30px;
     border: 5px solid #f6f6f6;
 	padding:1%;
 	background-color:#f6f6f6;
@@ -369,7 +369,7 @@ div#block-views-block-live-project-block-1 .views-field.views-field-field-apply-
 }
 .more-link{
 	background: #006699;
-    width: 83px;
+    width: 90px;
     color: #fff !important;
     padding: 6px 6px 5px 6px;
     margin-left: 130px;
@@ -751,29 +751,47 @@ div#edit-field-pgp-committee-wrapper  {
 
 
 
-#tabs2 li,
-#tabs3 li{
-    width: 17%;
+#tabs2 li{
+    width: 23%;
     float: left;
     text-align: center;
-    height: 50px;
-    padding: 2%;
+    height: 36px;
+    padding: 1%;
+	list-style-type: none;
+	margin: 0px 41px 4px -40px;
 }
-#tabs li,
-#tabs1 li{
-	 width: 37%;
+#tabs3 li{
+	width: 23%;
     float: left;
     text-align: center;
-    height: 37px;
+    height: 36px;
+    padding: 1%;
+	list-style-type: none;
+}
+#tabs li, 
+#tabs1 li {
+    width: 40%;
+    float: left;
+    text-align: center;
+    height: 35px;
     padding: 3%;
+    list-style-type: none;
+    margin: 0px 41px 4px -40px;
 }
 #tabs{font-size: 14px;}
  .ui-widget-header {
-	background:#3489DA;
-	border: 1px solid #b9cd6d;
-	color: #FFFFFF;
-	font-weight: bold;
+	background: none;
+    border-bottom: 2px solid #3489DA !important;
+    border: 1px solid #F6F6F6;
+    color: #FFFFFF;
+    font-weight: bold;
+    height: 38px;
+    text-decoration: none;
+	
  }
+ li.ui-state-default.ui-corner-top {
+    background-color: #3489DA;
+}
 li.ui-state-default.ui-corner-top.ui-tabs-active.ui-state-active {
     border: 1px solid #d3d3d3/*{borderColorDefault}*/;
     background: #006699/*{bgColorDefault}*/ !important;
@@ -782,11 +800,8 @@ li.ui-state-default.ui-corner-top.ui-tabs-active.ui-state-active {
 }
 li.ui-state-default.ui-corner-top.ui-tabs-active.ui-state-active a{
 	color:#fff !important;
-	font-size:15px !important;
 }
-li.ui-state-default.ui-corner-top {
-    background-color: #3489DA !important;
-}
-li.ui-state-default.ui-corner-top.ui-state-hover{
-	 background: #006699/*{bgColorDefault}*/ !important;
+
+.ui-widget-content{
+	    border: 0px solid #aaaaaa/*{borderColorContent}*/;
 }
