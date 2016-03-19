@@ -218,7 +218,7 @@ div#block-views-block-latest-news-events-block-1-2 .views-field.views-field-fiel
 	height:100px;
 	font-family: 'Century Gothic';
     float: left;
-    background-image:url("../../zircon/images/calendar.jpg") !important;
+    background-image:url("../../zircon/images/blue-pill-button-icon-54275.png") !important;
     color: #333;
 	padding: 14% 0% 0% 9%;
     margin: 1px 7px 4px -14px;
@@ -781,6 +781,40 @@ div#edit-field-pgp-committee-wrapper  {
     padding: 1%;
 	list-style-type: none;
 }
+
+#tabs7 li {
+    width: 4%;
+    float: right;
+    text-align: center;
+    height: 42px;
+    padding: 0.8%;
+    list-style-type: none;
+	border:none;
+	border-bottom:0px !important;
+	border-radius:3px;
+}
+#block-userlogin-2 li{
+	 width: 93%;
+	 padding:0 !important;
+	 height: 20px;
+}
+
+#block-userlogin-2{
+	width:18%;
+	position:absolute;
+	z-index:600;
+	background-color:#3489DA;
+	padding:2%;
+	margin-left: 929px;
+    margin-top: 38px;
+	border: 10px solid #006699;
+}
+#main-menu-inner {
+    margin-top: 11px;
+}
+ #block-userlogin-2 .user-login-form .form-text{
+	 width:165px;
+ }
 #tabs li, 
 #tabs1 li {
     width: 40%;
@@ -794,7 +828,8 @@ div#edit-field-pgp-committee-wrapper  {
 
 
 #tabs{font-size: 14px;}
- .ui-widget-header {
+ .region.region-sidebar-second .ui-widget-header,
+ .content .ui-widget-header{
 	background: none;
     border-bottom: 2px solid #3489DA !important;
     border: 1px solid #F6F6F6;
@@ -802,7 +837,7 @@ div#edit-field-pgp-committee-wrapper  {
     font-weight: bold;
     height: 38px;
     text-decoration: none;
-	
+	padding:0;
  }
  li.ui-state-default.ui-corner-top {
     background-color: #3489DA;
@@ -831,3 +866,16 @@ form#node-application-form-form {
 .views-field.views-field-field-committees-image-pgp {
     width: 21%;
     float: left;
+}
+
+#block-loginiconblock{
+	cursor:pointer;
+	Width:36px;
+	height: 50px;
+	float:right;
+	margin-left: -30px;
+}
+
+#block-userlogin-2{
+	display: none;
+}

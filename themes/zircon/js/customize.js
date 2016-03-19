@@ -94,6 +94,18 @@ jQuery( document ).ready(function($){
 	
 	$('#tabs6').prepend("<ul><li> <a href='#block-views-block-pgp-committees-block-1'> PGP Committees </a></li><li> <a href='#block-views-block-ipm-committees-block-1'> IPM Committees</a></li></ul>");
    
+   
+   //----------------------------------------------------------------------------
+	// Add Tabs on Login page using JQuery UI library. 
+	//----------------------------------------------------------------------------
+
+	$('#block-loginiconblock').click(function(){
+		$('#block-userlogin-2').toggle();
+	});
+ 
+    
+  
+ 
 });
 
 
