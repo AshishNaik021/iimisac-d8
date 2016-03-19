@@ -41,7 +41,7 @@ jQuery( document ).ready(function($){
       
 	  
 	  
-	  //----------------------------------------------------------------------------
+	//----------------------------------------------------------------------------
 	// Add Tabs on Latest News & Events page using JQuery UI library. 
 	//----------------------------------------------------------------------------
 	$(function() {
@@ -53,8 +53,47 @@ jQuery( document ).ready(function($){
 	
 	$('#tabs3').prepend("<ul><li> <a href='#block-views-block-pgp-latest-news-events-block-2'> PGP Events </a></li><li> <a href='#block-views-block-latest-news-events-ipm-block-2'> IPM Events</a></li></ul>");
  
-	  
-	  
+ 
+   //----------------------------------------------------------------------------
+	// Add Tabs on Latest Articles page using JQuery UI library. 
+	//----------------------------------------------------------------------------
+	$(function() {
+            $( "#tabs4" ).tabs();
+         });
+	$('#block-views-block-latest-articles-block-2').addClass('front-page-tabs-4');
+	$('#block-views-block-latest-articles-ipm-block-2').addClass('front-page-tabs-4');
+	$('.front-page-tabs-4').wrapAll('<div id="tabs4"> </div>');
+	
+	$('#tabs4').prepend("<ul><li> <a href='#block-views-block-latest-articles-block-2'> PGP Articles </a></li><li> <a href='#block-views-block-latest-articles-ipm-block-2'> IPM Articles</a></li></ul>");
+ 
+	 
+
+    //----------------------------------------------------------------------------
+	// Add Tabs on Clubs page using JQuery UI library. 
+	//----------------------------------------------------------------------------
+	$(function() {
+            $( "#tabs5" ).tabs();
+         });
+	$('#block-views-block-pgp-club-block-2').addClass('front-page-tabs-5');
+	$('#block-views-block-ipm-club-block-2').addClass('front-page-tabs-5');
+	$('.front-page-tabs-5').wrapAll('<div id="tabs5"> </div>');
+	
+	$('#tabs5').prepend("<ul><li> <a href='#block-views-block-pgp-club-block-2'> PGP Clubs </a></li><li> <a href='#block-views-block-ipm-club-block-2'> IPM Clubs</a></li></ul>");
+ 
+
+ 
+	//----------------------------------------------------------------------------
+	// Add Tabs on Committees page using JQuery UI library. 
+	//----------------------------------------------------------------------------
+	$(function() {
+            $( "#tabs6" ).tabs();
+         });
+	$('#block-views-block-pgp-committees-block-1').addClass('front-page-tabs-6');
+	$('#block-views-block-ipm-committees-block-1').addClass('front-page-tabs-6');
+	$('.front-page-tabs-6').wrapAll('<div id="tabs6"> </div>');
+	
+	$('#tabs6').prepend("<ul><li> <a href='#block-views-block-pgp-committees-block-1'> PGP Committees </a></li><li> <a href='#block-views-block-ipm-committees-block-1'> IPM Committees</a></li></ul>");
+   
 });
 
 

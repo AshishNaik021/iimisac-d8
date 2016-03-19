@@ -315,6 +315,7 @@ div#block-views-block-live-project-block-1 .views-field-title{
 #block-views-block-latest-articles-ipm-block-1 {
 	padding-left:4%;
 	background-color:#fcfcfc;
+    margin-top: 6px;
 }
 .views-field-view-node a:hover{
 	color:#fff !important;
@@ -758,9 +759,21 @@ div#edit-field-pgp-committee-wrapper  {
     height: 36px;
     padding: 1%;
 	list-style-type: none;
-	margin: 0px 41px 4px -40px;
+	 margin: 0px 2px 6px 0px;
 }
-#tabs3 li{
+#tabs2 li .contextual-region {
+    width: 23%;
+    float: left;
+    text-align: center;
+    height: 36px;
+    padding: 1%;
+	list-style-type: none;
+	margin: 0px 41px 4px -40px !important;
+}
+#tabs3 li,
+#tabs4 li,
+#tabs5 li,
+#tabs6 li{
 	width: 23%;
     float: left;
     text-align: center;
@@ -776,8 +789,10 @@ div#edit-field-pgp-committee-wrapper  {
     height: 35px;
     padding: 3%;
     list-style-type: none;
-    margin: 0px 41px 4px -40px;
+   margin: 0px 2px 6px 0px;
 }
+
+
 #tabs{font-size: 14px;}
  .ui-widget-header {
 	background: none;
@@ -805,3 +820,14 @@ li.ui-state-default.ui-corner-top.ui-tabs-active.ui-state-active a{
 .ui-widget-content{
 	    border: 0px solid #aaaaaa/*{borderColorContent}*/;
 }
+form#node-application-form-form {
+    width: 65%;
+    margin: auto;
+    border: 2px solid #006699;
+	padding:3%;
+	background-color:#f6f6f6;
+}
+.views-field.views-field-field-committees-image-ipm,
+.views-field.views-field-field-committees-image-pgp {
+    width: 21%;
+    float: left;
