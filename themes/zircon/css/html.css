@@ -150,7 +150,6 @@ p {
 	font-size: 20px;
 	background-color:#595E61;
 	border-radius:7px;
-	min-height: 475px;
 }
 #block-views-block-pgp-club-block-1-4{
 	width: 49%;
@@ -160,7 +159,6 @@ p {
 	font-size: 20px;
 	background-color:#595E61;
 	border-radius:7px;
-	min-height: 475px;
 }
 
 div#block-views-block-latest-news-events-block-1 .views-field.views-field-title{
@@ -260,7 +258,7 @@ div#block-views-block-latest-articles-ipm-block-1 .views-field.views-field-body 
 div#block-views-block-latest-articles-block-1 .views-field-title ,
 div#block-views-block-latest-articles-ipm-block-1 .views-field-title {
 	font-size: 0.9em;
-	height: 110px;
+	height: 96px;
 	width: 90%;
 }
 div#block-views-block-live-project-block-1 .views-field-title{
@@ -601,7 +599,7 @@ ul.inline .node-readmore a, ul.links.inline .node-readmore a{
 	margin-bottom: 20px;
 }
 #block-views-block-video-carousel-block-1-5{
-	margin-top: 518px;
+	margin-top: 345px;
     background-color: #595E61;
     padding: 6px;
     font-size: 20px;
@@ -609,6 +607,19 @@ ul.inline .node-readmore a, ul.links.inline .node-readmore a{
     border-radius: 6px;
 	margin-bottom: 20px;
     height: 216px;
+}
+
+.sidebar #block-views-block-discussion-forum-block-1 h2 {
+    color: white;
+    background-color: #3498DA;
+    margin: -13px -1px 20px 0px;
+    padding: 10px 15px;
+    text-transform: uppercase;
+    -webkit-border-top-left-radius: 5px;
+    -webkit-border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    font-size: 1.23em;
 }
 .slick-slide.slick-active {
 	 -webkit-transition: all .3s ease;
