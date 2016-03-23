@@ -150,6 +150,7 @@ p {
 	font-size: 20px;
 	background-color:#595E61;
 	border-radius:7px;
+	min-height: 475px;
 }
 #block-views-block-pgp-club-block-1-4{
 	width: 49%;
@@ -159,6 +160,7 @@ p {
 	font-size: 20px;
 	background-color:#595E61;
 	border-radius:7px;
+	min-height: 475px;
 }
 
 div#block-views-block-latest-news-events-block-1 .views-field.views-field-title{
@@ -215,10 +217,11 @@ div#block-views-block-pgp-latest-news-events-block-1 .views-field.views-field-fi
 div#block-views-block-latest-news-events-ipm-block-1 .views-field.views-field-field-sheduled-date-time,
 div#block-views-block-latest-news-events-block-1-2 .views-field.views-field-field-sheduled-date-time{
     width: 47%;
-	height:100px;
+	height:120px;
 	font-family: 'Century Gothic';
     float: left;
-    background-image:url("../../zircon/images/blue-pill-button-icon-54275.png") !important;
+    background-image:url("../../zircon/images/calendar1.png") !important;
+	background-size: 100px 120px;
     color: #333;
 	padding: 14% 0% 0% 9%;
     margin: 1px 7px 4px -14px;
@@ -306,6 +309,7 @@ div#block-views-block-live-project-block-1 .views-field-title{
 .content .views-field-created {
 	color: #3498DA;
     font-size: 12px;
+	height: 20px;
 }
 .content #block-views-block-latest-articles-block-1 .field-content,
 .content #block-views-block-latest-articles-ipm-block-1 .field-content{
@@ -497,7 +501,7 @@ header#header {
 .sidebar-first .views-field.views-field-field-club-logo,
 .sidebar-second .views-field.views-field-field-ipm-logo,
 .sidebar-second .views-field.views-field-field-club-logo {
-	width:80%;
+	width:100%;
 	padding:0;
 	border:0;
 	margin: 0;
@@ -506,11 +510,11 @@ div#block-views-block-ipm-club-block-1-4 .views-field.views-field-field-ipm-logo
 div#block-views-block-pgp-club-block-1-4 .views-field.views-field-field-club-logo{
 	width:65%;
 	display: inline-block;
-    padding: 10% 2% 6% 2%;
-   border: 1px solid #fff;
+    padding: 8% 0% 6% 9%;
+    border: 1px solid #fff;
 	margin: 8px 8px 1px -1px;
 	background-color:#fff;
-	 -webkit-transition: all .3s ease;
+	-webkit-transition: all .3s ease;
     -moz-transition: all .3s ease;
     -o-transition: all 0.3s ease;
     transition: all .3s ease;
@@ -597,7 +601,7 @@ ul.inline .node-readmore a, ul.links.inline .node-readmore a{
 	margin-bottom: 20px;
 }
 #block-views-block-video-carousel-block-1-5{
-	margin-top: 353px;
+	margin-top: 518px;
     background-color: #595E61;
     padding: 6px;
     font-size: 20px;
@@ -762,9 +766,12 @@ div#edit-field-pgp-committee-wrapper  {
     width: 23%;
     float: left;
     text-align: center;
-    line-height: 2.8;
+    line-height: 3.1;
 	list-style-type: none;
-	 margin: 0px 2px 0px 0px;
+	margin: 0px 0px 0px 0px;
+    border-top: 1px solid #afafaf/*{borderColorDefault}*/;
+	border-left: 1px solid #afafaf/*{borderColorDefault}*/;
+	border-right: 1px solid #afafaf/*{borderColorDefault}*/;
 }
 #tabs2 li .contextual-region {
     width: 23%;
@@ -782,7 +789,7 @@ div#edit-field-pgp-committee-wrapper  {
 	width: 23%;
     float: left;
     text-align: center;
-    height: 40px;
+    height: 42px;
     padding: 1%;
 	list-style-type: none;
 }
@@ -798,13 +805,13 @@ div#edit-field-pgp-committee-wrapper  {
 	border-bottom:0px !important;
 	border-radius:3px;
 }
-#block-userlogin-2 li{
+#block-userlogin-3 li{
 	 width: 93%;
 	 padding:0 !important;
 	 height: 20px;
 }
 
-#block-userlogin-2{
+#block-userlogin-3{
 	width:18%;
 	position:absolute;
 	z-index:600;
@@ -815,10 +822,27 @@ div#edit-field-pgp-committee-wrapper  {
     margin-top: 38px;
 	border: 10px solid #006699;
 }
+nav#block-useraccountmenu {
+    width: 12%;
+    position: absolute;
+    z-index: 566;
+    background-color: #3489DA;
+    padding: 2%;
+    height: 110px;
+    margin-left: 1004px;
+    margin-top: 37px;
+    border: 10px solid #006699;
+}
+nav#block-useraccountmenu h2{
+	display:none;
+}
+nav#block-useraccountmenu {
+	display:none;
+}
 #main-menu-inner {
     margin-top: 11px;
 }
- #block-userlogin-2 .user-login-form .form-text{
+ #block-userlogin-3 .user-login-form .form-text{
 	 width:165px;
  }
 #tabs li, 
@@ -837,7 +861,7 @@ div#edit-field-pgp-committee-wrapper  {
 #tabs{font-size: 14px;}
  .region.region-sidebar-second .ui-widget-header,
  .content .ui-widget-header{
-	background: #DEE3E1;
+	background: none;
     border-bottom: 2px solid #3489DA !important;
     border: 1px solid #F6F6F6;
     color: #FFFFFF;
@@ -851,14 +875,15 @@ div#edit-field-pgp-committee-wrapper  {
 }
 li.ui-state-default.ui-corner-top.ui-tabs-active.ui-state-active {
     border-top: 1px solid #f6f6f6/*{borderColorDefault}*/;
-	 border-left: 1px solid #f6f6f6/*{borderColorDefault}*/;
-	  border-right: 1px solid #f6f6f6/*{borderColorDefault}*/;
+	border-left: 1px solid #f6f6f6/*{borderColorDefault}*/;
+	border-right: 1px solid #f6f6f6/*{borderColorDefault}*/;
     background: #fcfcfc/*{bgColorDefault}*/ !important;
     font-weight: normal/*{fwDefault}*/;
     color: #555555/*{fcDefault}*/;
 }
 li.ui-state-default.ui-corner-top.ui-tabs-active.ui-state-active a{
 	color:#006699 !important;
+	font-weight: bold;
 }
 
 .ui-widget-content{
@@ -887,10 +912,10 @@ form#node-application-form-form {
 .ui-state-default{
 	background-color:#F7F7F7 !important;
 }
-#block-userlogin-2{
+#block-userlogin-3{
 	display: none;
 }
-#block-userlogin-2 h2{
+#block-userlogin-3 h2{
 	margin-top: -21px;
     color: #fff;
 }
@@ -899,7 +924,61 @@ div#block-views-block-projects-block-1-2 .views-field.views-field-field-company-
 	height: 85px;
 	padding:1%;
 }
-#main-menu .container .block {
-    float: left;
+#main-menu .container {
     border-radius: 0 !important;
+	width:100%;
+}
+#slideshow .container{
+	width:100% !important;
+}
+#main-menu{
+	margin-bottom:0px !important;
+}
+form#contact-message-feedback-form{
+	border:1px solid #f6f6f6;
+	background-color:#fcfcfc;
+	padding:2%;
+}
+form#contact-message-feedback-form  input#edit-mail,
+form#contact-message-feedback-form  input#edit-name
+{
+	width:462px !important;
+	margin-bottom:10px;
+}
+
+.event-month{
+	margin-top: -12px;
+    color: #fff;
+    font-size: larger;
+    text-transform: uppercase;
+	text-align: center;
+    margin-left: -9px;
+    width: 93%;
+}
+.event-date{
+	font-size: 39px;
+    text-align: center;
+    margin-left: -3px;
+    font-weight: bold;
+    margin-top: 6px;
+    border-bottom: 1px solid #aaa;
+    width: 78%;
+    padding-bottom: 5px;
+    line-height: 35px;
+}
+.event-year{
+	text-align: center;
+    margin-left: 26px;
+    width: 90%;
+    transform: rotate(90deg);
+    margin-top: -32px;
+	font-weight:normal;
+}
+.event-time{
+	margin-top: 12px;
+    text-align: center;
+    width: 62px;
+	color:#006699;
+	font-weight:normal;
+	font-size: 18px;
 }

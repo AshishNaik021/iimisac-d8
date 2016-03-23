@@ -100,12 +100,57 @@ jQuery( document ).ready(function($){
 	//----------------------------------------------------------------------------
 
 	$('#block-loginiconblock').click(function(){
-		$('#block-userlogin-2').toggle();
+		$('#block-userlogin-3').toggle();
+		$('#block-useraccountmenu').toggle();
 	});
  
-    
-  
  
+   //----------------------------------------------------------------------------
+   //   Format Date Display
+   //----------------------------------------------------------------------------
+
+    $('#block-views-block-pgp-latest-news-events-block-1 .datetime').each(function(){
+		var eventDate = $(this).text();
+		var eventDateArr1 = eventDate.split(',');
+		var eventDateArr2 = eventDateArr1[1].split(' ');
+		var eventDateArr3 = eventDateArr1[2].split('-');
+		var month = eventDateArr2[1];
+		var date = eventDateArr2[2];
+		var year = eventDateArr3[0].trim();
+		var time = eventDateArr3[1].trim();
+	
+
+		var finalDate = '<div class="event-month">' + month + '</div>'
+		              + '<div class="event-date">' + pad(date,2)  + '</div>'
+		              + '<div class="event-year">' + year  + '</div>' 
+		              + '<div class="event-time">' + time  + '</div>';
+		
+		$(this).html(finalDate);
+	});
+    $('#block-views-block-latest-news-events-ipm-block-1 .datetime').each(function(){
+		var eventDate = $(this).text();
+		var eventDateArr1 = eventDate.split(',');
+		var eventDateArr2 = eventDateArr1[1].split(' ');
+		var eventDateArr3 = eventDateArr1[2].split('-');
+		var month = eventDateArr2[1];
+		var date = eventDateArr2[2];
+		var year = eventDateArr3[0].trim();
+		var time = eventDateArr3[1].trim();
+	
+		
+		var finalDate = '<div class="event-month">' + month + '</div>'
+		              + '<div class="event-date">' + pad(date,2)  + '</div>'
+		              + '<div class="event-year">' + year  + '</div>'
+		              + '<div class="event-time">' + time  + '</div>';
+		
+		$(this).html(finalDate);
+	});
+  
+
 });
 
+function pad (str, max) {
+  str = str.toString();
+  return str.length < max ? pad("0" + str, max) : str;
+} 
 
