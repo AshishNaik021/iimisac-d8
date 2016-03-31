@@ -260,13 +260,13 @@ div#block-views-block-latest-articles-ipm-block-1 .views-field.views-field-body 
 
 div#block-views-block-latest-articles-block-1 .views-field-title ,
 div#block-views-block-latest-articles-ipm-block-1 .views-field-title {
-	font-size: 0.9em;
+	font-size: 14px;
 	height: 96px;
 	width: 90%;
 }
 div#block-views-block-live-project-block-1 .views-field-title{
 	font-size: 1.1em;
-	height: 80px;
+	height: 65px;
 	width: 90%;
 }
 .sidebar-first span.views-label.views-label-field-functional-domains{
@@ -728,7 +728,7 @@ span.views-field.views-field-field-company-logo {
     height: 18px;
 }
 .views-field.views-field-field-target-audience {
-    margin-bottom: 26px;
+    margin-bottom: 8px;
 }
 .node.node--type-live-projects.node--view-mode-full {
 	background-color:#fcfcfc;
@@ -1072,4 +1072,39 @@ div#block-views-block-slideshow1-block-1{
     float: left;
 	margin-top:-200px;
 }
+.views-field.views-field-field-last-date-to-apply{
+	width: 76%;
+	float: left;
+	margin-bottom: 9px;
+    font-weight: bold;
+    padding: 0%;
+}
+span.views-label.views-label-field-last-date-to-apply {
+    width: 31%;
+    float: left;
+}
+div#block-views-block-live-project-block-1 span.views-label.views-label-field-last-date-to-apply{
+	width:0;
+	float: none;
+}
+#block-views-block-live-project-block-1  .views-field.views-field-field-club-committee-name{
+	font-weight: bold;
+    height:55px;
+}
+#block-views-block-article-slideshow-block-1 {
+    float: left;
+    width: 27%;
+}
+div#block-views-block-article-slideshow-block-1 .views-field.views-field-title {
+	margin-bottom:-5px;
+}
+div#block-views-block-video-block-1 .views-field.views-field-title{
+	display:none;
+}
 
+article.contextual-region.node.node--type-sports-slideshow.node--promoted.node--view-mode-teaser,
+article.contextual-region.node.node--type-video-slideshow.node--promoted.node--view-mode-teaser,
+article.contextual-region.node.node--type-slideshow1.node--promoted.node--view-mode-teaser,
+article.contextual-region.node.node--type-article-slideshow.node--promoted.node--view-mode-teaser {
+    display: none;
+}

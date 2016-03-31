@@ -582,10 +582,10 @@
 }
 /* line 533, ../sass/block.scss */
 #main .container .content .views-row {
-  border-top: 1px solid #dadada;
+  border-top: 0px solid #dadada;
   border-top-style: dotted;
   margin-bottom: 20px;
-  padding-top: 20px;
+  padding-top: 0px;
 }
 /* line 538, ../sass/block.scss */
 #main .container .content .views-row:after {
