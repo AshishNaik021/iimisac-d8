@@ -504,7 +504,7 @@ header#header {
 	height: 100px;
 }
 .site-logo img {
-    width: 212px !important;
+    width: 275px !important;
     margin-left: 40px;
     margin-top: -39px;
 }
@@ -1101,7 +1101,26 @@ div#block-views-block-article-slideshow-block-1 .views-field.views-field-title {
 div#block-views-block-video-block-1 .views-field.views-field-title{
 	display:none;
 }
-
+#block-views-block-article-slideshow1-block-1 {
+    float: left;
+    width: 27%;
+}
+#block-views-block-article-slideshow1-block-1 .views-field.views-field-title{
+	margin-bottom:-79px !important;
+}
+div#block-views-block-event-calender-block-1-3,
+div#block-views-block-committees-block-block-1{
+	font-weight: bold;
+}
+div#block-views-block-event-calender-block-1-3 .views-field.views-field-title,
+div#block-views-block-committees-block-block-1 .views-field.views-field-title{
+	margin-bottom: 12px;
+    border-bottom: 2px solid #666;
+    padding: 1px;
+}
+div#block-views-block-magazines-block-1 .more-link{
+	padding: 6px 16px 5px 6px;
+}
 article.contextual-region.node.node--type-sports-slideshow.node--promoted.node--view-mode-teaser,
 article.contextual-region.node.node--type-video-slideshow.node--promoted.node--view-mode-teaser,
 article.contextual-region.node.node--type-slideshow1.node--promoted.node--view-mode-teaser,
