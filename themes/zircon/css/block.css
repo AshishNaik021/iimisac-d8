@@ -148,7 +148,7 @@
 }
 /* line 93, ../sass/block.scss */
 #main-menu .container {
-  background-color:#3498DA;
+  background-color:#47639E;
   height: 45px;
 }
 /* line 103, ../sass/block.scss */
@@ -174,12 +174,12 @@
 }
 /* line 120, ../sass/block.scss */
 #main-menu .container ul.menu li .is-active {
-  background-color: #006699;
+  background-color: #6B8CD0;
  
 }
 /* line 129, ../sass/block.scss */
 #main-menu .container ul.menu li.menu-item--active-trail > a {
-  background-color: #006699;
+  background-color: #6B8CD0;
  
 }
 /* line 138, ../sass/block.scss */
@@ -196,7 +196,7 @@
 }
 /* line 149, ../sass/block.scss */
 #main-menu .container ul.menu li:hover > a, #main-menu .container ul.menu li:focus > a {
-  background-color:#006699;
+  background-color:#6B8CD0;
 }
 /* line 157, ../sass/block.scss */
 #main-menu .container ul.menu li:hover ul.menu, #main-menu .container ul.menu li:focus ul.menu {
@@ -209,7 +209,7 @@
 /* line 164, ../sass/block.scss */
 #main-menu .container ul.menu .menu-item--expanded > a {
   padding-right: 25px;
-  background-color:#3498DA;
+  background-color:#47639E;
 }
 /* line 166, ../sass/block.scss */
 #main-menu .container ul.menu .menu-item--expanded > a:before {
@@ -247,7 +247,7 @@
 #main-menu .container ul.menu ul.menu li a {
   color: #fff;
   border-radius: 0;
-  background-color: #3498DA;
+  background-color: #47639E;
   padding: 7px 15px;
   text-transform: none;
   font-family: arial;
@@ -264,7 +264,7 @@
 }
 /* line 215, ../sass/block.scss */
 #main-menu .container ul.menu ul.menu li .menu-item--active-trail > a {
-  background-color:#3498DA;
+  background-color:#47639E;
   color: white;
 }
 /* line 220, ../sass/block.scss */
@@ -273,7 +273,7 @@
 }
 /* line 225, ../sass/block.scss */
 #main-menu .container ul.menu ul.menu li:hover > a, #main-menu .container ul.menu ul.menu li:focus > a {
-    background-color:#006699;
+    background-color:#6B8CD0;
   color: white;
 }
 /* line 228, ../sass/block.scss */
@@ -559,6 +559,7 @@
 #main .container {
   background: #fff;
   padding: 15px;
+ 
 }
 /* line 516, ../sass/block.scss */
 #main .container .content .node--view-mode-teaser .field-type-image {
@@ -660,7 +661,7 @@
 /* line 616, ../sass/block.scss */
 .sidebar h2 {
   color: white;
-  background-color:#3498DA;
+  background-color:#47639E;
   margin: -15px -15px 15px -15px;
   padding: 10px 15px;
   text-transform: uppercase;
@@ -901,6 +902,7 @@
   background: #3c4043;
   padding: 15px;
   color: #c9c9c9;
+  width: 100%;
 }
 /* line 856, ../sass/block.scss */
 #panel_second h2 {
@@ -1051,6 +1053,7 @@
 .user-pass label,
 #edit-account label {
   display: block;
+  color: #fff;
 }
 /* line 1003, ../sass/block.scss */
 .user-login-form .form-text,

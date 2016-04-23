@@ -1,0 +1,15 @@
+<?php
+
+/**
+ * Implements hook_menu().
+ */
+function magazine_menu() {
+  // The paths given here need to match the ones in magazine.routing.yml exactly.
+  $items['admin/magazine'] = array(
+    'title' => 'Magazines',
+    'description' => 'This is the demo Magazines page.',
+    // The name of the route from foobar.routing.yml
+    'route_name' => 'magazine',
+  );
+  return $items;
+}

@@ -1,0 +1,6 @@
+magazine.admin:
+  title: 'Magazine settings'
+  description: 'Magazine'
+  parent: system.admin_config_development
+  route_name: magazine_module.content
+  weight: 100
