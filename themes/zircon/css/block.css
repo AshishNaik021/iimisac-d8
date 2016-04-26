@@ -51,7 +51,7 @@
 }
 /* line 8, ../sass/block.scss */
 .site-logo img {
-  width: 120px;
+  width: 145px;
 }
 
 /* line 13, ../sass/block.scss */
@@ -148,8 +148,9 @@
 }
 /* line 93, ../sass/block.scss */
 #main-menu .container {
-  background-color:#47639E;
+  background-color: #27AE60;
   height: 45px;
+  margin-top: 30px;
 }
 /* line 103, ../sass/block.scss */
 #main-menu .container ul.menu {
@@ -174,12 +175,12 @@
 }
 /* line 120, ../sass/block.scss */
 #main-menu .container ul.menu li .is-active {
-  background-color: #6B8CD0;
+  background-color: #F09943;
  
 }
 /* line 129, ../sass/block.scss */
 #main-menu .container ul.menu li.menu-item--active-trail > a {
-  background-color: #6B8CD0;
+  background-color: #27AE60;
  
 }
 /* line 138, ../sass/block.scss */
@@ -196,7 +197,7 @@
 }
 /* line 149, ../sass/block.scss */
 #main-menu .container ul.menu li:hover > a, #main-menu .container ul.menu li:focus > a {
-  background-color:#6B8CD0;
+  background-color:#F09943;
 }
 /* line 157, ../sass/block.scss */
 #main-menu .container ul.menu li:hover ul.menu, #main-menu .container ul.menu li:focus ul.menu {
@@ -209,7 +210,7 @@
 /* line 164, ../sass/block.scss */
 #main-menu .container ul.menu .menu-item--expanded > a {
   padding-right: 25px;
-  background-color:#47639E;
+  background-color: #27AE60;
 }
 /* line 166, ../sass/block.scss */
 #main-menu .container ul.menu .menu-item--expanded > a:before {
@@ -247,7 +248,7 @@
 #main-menu .container ul.menu ul.menu li a {
   color: #fff;
   border-radius: 0;
-  background-color: #47639E;
+  background-color: #27AE60;
   padding: 7px 15px;
   text-transform: none;
   font-family: arial;
@@ -273,7 +274,7 @@
 }
 /* line 225, ../sass/block.scss */
 #main-menu .container ul.menu ul.menu li:hover > a, #main-menu .container ul.menu ul.menu li:focus > a {
-    background-color:#6B8CD0;
+  background-color:#F09943;
   color: white;
 }
 /* line 228, ../sass/block.scss */
@@ -936,7 +937,6 @@
   margin: 0 0 7px;
   list-style-type: none;
   padding: 0 0 0 10px;
-  position: relative;
 }
 /* line 885, ../sass/block.scss */
 #panel_second ul li:before {
