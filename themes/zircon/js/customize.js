@@ -96,17 +96,38 @@ jQuery( document ).ready(function($){
    
    
    //----------------------------------------------------------------------------
-	// Add Tabs on Login page using JQuery UI library. 
+	// Add Tabs on Login And Logout page using JQuery UI library. 
 	//----------------------------------------------------------------------------
-
-	$('#block-loginiconblock').click(function(){
+	 $('#block-loginiconblock').click(function(){
 		$('#block-userlogin-3').toggle();
+		
 		$('#block-useraccountmenu').toggle();
+		console.log('I was here');	
 	});
- 
- 
- 
- 
+	
+    $(document).click(function(event) { 
+	     
+      if(!$(event.target).is($('#block-loginiconblock').find('*') ) && !$(event.target).is($('#block-userlogin-3').find('*')) && !$(event.target).is($('#block-userlogin-3'))) 
+		{
+           if($('#block-userlogin-3').css('display') == 'block') {
+            $('#block-userlogin-3').toggle();
+			$('#block-useraccountmenu').css('display','none');
+			console.log($(event.target));
+			console.log('This is login');
+			console.log($('#block-userlogin-3').find('*'));
+        }
+      } 
+	if(!$(event.target).is($('#block-loginiconblock').find('*') ) && !$(event.target).is($('#block-useraccountmenu').find('*')) && !$(event.target).is($('#block-useraccountmenu'))) 
+		{
+           if( $('#block-useraccountmenu').css('display') == 'block' ) {
+			$('#block-useraccountmenu').toggle();
+			console.log($(event.target));
+			console.log('This is logout');
+			console.log($('#block-useraccountmenu').find('*'));
+        }
+      } 	  
+    });
+     
    
 	//----------------------------------------------------------------------------
 	// Add Tabs on Latest News & Events page using JQuery UI library. 
@@ -201,7 +222,12 @@ jQuery( document ).ready(function($){
 		
 		$(this).html(finalDate);
 	});
-  
+  console.log("Menu I am here!	");
+   $("ul.menu > li.menu-item--expanded > ul.menu > li.menu-item--expanded > ul.menu > li.menu-item--expanded > ul.menu").addClass("menu-12");
+   $("ul.menu > li.menu-item--expanded > ul.menu > li.menu-item--expanded > ul.menu > li.menu-item--expanded").hover(function() {
+	   $(this).children().toggleClass("menu-12");
+   });
+  console.log("Menu I am here2!	");
 
 });
 

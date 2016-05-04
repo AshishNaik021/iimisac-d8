@@ -186,7 +186,7 @@
 /* line 138, ../sass/block.scss */
 #main-menu .container ul.menu li:first-child {
   border-left: none;
-  margin-left: 37px;
+  margin-left: -18px;
 }
 /* line 140, ../sass/block.scss */
 #main-menu .container ul.menu li:first-child > a {
