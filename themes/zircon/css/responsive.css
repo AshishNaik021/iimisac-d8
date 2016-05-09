@@ -571,6 +571,7 @@
   #comments .form-text {
     width: 100%;
   }
+ 
 }
 @media (max-width: 639px) {
   /* line 401, ../sass/responsive.scss */
@@ -835,4 +836,285 @@
   #slideshow .flex-direction-nav a {
     margin-top: -27px;
   }
+  .region.region-slideshow {
+    display: none;
+}
+.site-slogan{
+	display: none;
+}
+#block-socialmedialinks {
+    width: 100%;
+    margin-left: -18px;
+    float: left;
+    margin-top: -35px;
+}
+a.site-logo{
+margin-top: 74px;
+margin-left: -8px;
+width: 100px !important;
+}
+#header .search-block-form{
+	margin-top: 55px;
+}
+#block-loginiconblock{
+	margin-left:-40px;
+	float:left;
+	margin-top:20px;
+}
+#block-useraccountmenu{
+float: left;
+margin-left: 150px;
+margin-top: 121px;
+width: 37%;
+}
+#block-userlogin-3{
+margin-left: 79px;
+width: 67%;
+margin-top: 121px;
+}
+#tabs2 li{
+	width:50%;
+}
+#block-views-block-latest-articles-block-1 h2{
+font-size: 15px;
+}
+#block-views-block-latest-articles-block-1 h2 {
+    margin: -12px 0px 21px -10px !important;
+}
+#block-views-block-latest-articles-block-1 .views-field-title, 
+#block-views-block-latest-articles-ipm-block-1 .views-field-title {
+    font-size: 10px;
+    width: 79%;
+    height: 85px;
+}
+.content .views-field-created {
+    color: #47639E;
+    font-size: 8px;
+    height: 27px;
+}
+.views-field.views-field-field-news-image {
+    height: 61px;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all .3s ease;
+}
+.views-field.views-field-body {
+    height: 105px;
+    color: #777 !important;
+    font-size: 12px;
+}
+#block-views-block-latest-articles-block-1 .views-field.views-field-body p,
+#block-views-block-latest-articles-ipm-block-1 .views-field.views-field-body p {
+    margin-left: 0px;
+    font-size: 8px !important;
+}
+#block-views-block-latest-articles-block-1 .views-field-view-node, 
+#block-views-block-live-project-block-1 .views-field-view-node, 
+#block-views-block-latest-articles-ipm-block-1 .views-field-view-node,
+ #block-views-block-latest-articles-ipm-block-2 .views-field-view-node {
+    background: #6B8CD0;
+    width: 67px;
+    color: #fff !important;
+    padding: 2px 0px 1px 1px;
+    margin-left: 0;
+}
+#block-views-block-live-project-block-1 .views-field-title a {
+    color: #47639E;
+    font-family: "oregon_ldoregular", sans-serif;
+    font-size: 11px;
+}
+.views-field.views-field-field-company-logo {
+    height: 45px;
+    width: 85%;
+}
+#block-views-block-live-project-block-1 .views-field-title {
+    font-size: 1.1em;
+    height: 73px;
+}
+#block-views-block-live-project-block-1 .views-field.views-field-field-company-name {
+    color: #666;
+    font-weight: bold;
+    height: 50px;
+    font-size: 11px;
+}
+#block-views-block-live-project-block-1 .views-field.views-field-body {
+    height: 102px;
+    width: 84%;
+    font-size: 8px;
+}
+#block-views-block-live-project-block-1 .views-field.views-field-field-last-date-to-apply{
+font-size: 10px;
+}
+#tabs li, #tabs1 li {
+    width: 50%;
+}
+#block-views-block-latest-news-events-block-1 .views-field.views-field-field-sheduled-date-time, #block-views-block-pgp-latest-news-events-block-1 .views-field.views-field-field-sheduled-date-time, #block-views-block-latest-news-events-ipm-block-1 .views-field.views-field-field-sheduled-date-time, #block-views-block-latest-news-events-block-1-2 .views-field.views-field-field-sheduled-date-time, #block-views-block-latest-news-events-ipm-block-1-2 .views-field.views-field-field-sheduled-date-time, #block-views-block-pgp-latest-news-events-block-1-2 .views-field.views-field-field-sheduled-date-time {
+    width: 51%;
+    height: 116px;
+    font-family: 'Century Gothic';
+    float: left;
+    background-image: url("../../zircon/images/calendar1.png") !important;
+    background-size: 88px 113px;
+    color: #333;
+    padding: 14% 0% 0% 9%;
+    margin: -4px -7px 4px -11px;
+    background-repeat: no-repeat;
+    font-weight: bold;
+}
+.event-month {
+    margin-top: -13px;
+    color: #fff;
+    font-size: larger;
+    text-transform: uppercase;
+    text-align: center;
+    margin-left: -16px;
+    width: 96%;
+    font-size: 13px;
+}
+.event-date {
+    font-size: 32px;
+    text-align: center;
+    margin-left: -7px;
+    font-weight: bold;
+    margin-top: 6px;
+    border-bottom: 1px solid #aaa;
+    width: 78%;
+    padding-bottom: 5px;
+    line-height: 35px;
+}
+.event-year {
+    text-align: center;
+    margin-left: 16px;
+    width: 90%;
+    transform: rotate(90deg);
+    margin-top: -32px;
+    font-weight: normal;
+}
+
+.event-time {
+    margin-top: 7px;
+    text-align: center;
+    width: 58px;
+    color: #6B8CD0;
+    font-weight: normal;
+    font-size: 18px;
+}
+#block-socialmedialinks-2 ul li a {
+    width: 50px;
+    padding: 0 !important;
+}
+.more-link{
+margin-left: 100px;
+}
+#block-views-block-carousel-block-1-3 {
+    height: 175px;
+}
+#block-views-block-ipm-club-block-1-4 .views-field.views-field-field-ipm-logo,
+ #block-views-block-pgp-club-block-1-4 .views-field.views-field-field-club-logo{
+height: 50px;
+}
+#block-views-block-pgp-club-block-1-4 ,
+#block-views-block-ipm-club-block-1-4{
+    width: 100%;
+}
+#block-views-block-ipm-club-block-1-4{
+margin-top: 24px;
+}
+#block-views-block-ipm-club-block-1-4 .more-link, 
+#block-views-block-pgp-club-block-1-4 .more-link {
+    float: right;
+    margin-right: 14px;
+    width: 38%;
+    font-size: 14px;
+    text-align: center;
+    margin-top: 17px;
+}
+#block-views-block-video-carousel-block-1-5 {
+    margin-top: 535px;
+    height: 167px;
+}
+#tabs3 li, #tabs4 li, #tabs5 li, #tabs6 li {
+    width: 50%;
+    padding: 4%;
+}
+#block-views-block-pgp-latest-news-events-block-2 .views-field.views-field-field-news-events-image, 
+#block-views-block-latest-news-events-ipm-block-2 .views-field.views-field-field-news-events-image {
+    width: 45%;
+    height: 100px;
+    margin-right: 10px;
+    float: left;
+}
+.content .views-field-title {
+    font-size: 20px;
+    color: #47639E;
+}
+.content .views-field.views-field-field-sheduled-date-time {
+    color: #47639E !important;
+    font-size: 10px;
+}
+.views-field.views-field-body {
+    height: 105px;
+    color: #777 !important;
+    font-size: 11px;
+}
+}
+@media (max-width: 768px) {
+ #block-views-block-event-slideshow-block-1-2, #block-views-block-video-slide-block-1-2 {
+    float: left;
+    width: 49%;
+    margin-left: 9px;
+}
+#block-views-block-slideshow-block-1 {
+    display: none;
+}
+#block-views-block-photo-gallery-slide-show-block-1-2 {
+    height: 200px;
+}
+#slideshow .container .views-field-title {
+    font-size: 1.15em;
+}
+span.views-field.views-field-field-company-logo {
+    height: 100px;
+    float: left;
+}
+.views-label.views-label-field-company-name, 
+.views-label.views-label-field-club-committee-name,
+ .views-label.views-label-field-duration, 
+ .views-label.views-label-field-functional-domains, 
+ .views-label.views-label-field-location, 
+ .views-label.views-label-field-number-of-openings,
+ .views-label.views-label-field-report, 
+ .views-label.views-label-field-target-audience {
+    float: left;
+    color: #333;
+    width: 48%;
+    font-size: 11px;
+    height: 20px;
+}
+span.views-label.views-label-field-last-date-to-apply {
+    width: 40%;
+    float: left;
+    font-size: 12px;
+}
+.views-field-view-node {
+    background: #6B8CD0;
+    width: 60px;
+    color: #fff !important;
+    padding: 4px 7px 6px 4px;
+    margin-left: 20px;
+}
+.views-field.views-field-field-apply-now {
+    background: #6B8CD0;
+    width: 80px;
+    color: #fff !important;
+    padding: 3px 5px 6px 4px;
+    margin-left: 20px;
+}
+.views-field.views-field-field-club-committee-name a{
+	font-size:11px;
+}
+.views-field.views-field-field-company-name .field-content{
+	font-size:12px;
+}
 }
