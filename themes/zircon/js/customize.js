@@ -173,8 +173,7 @@ jQuery( document ).ready(function($){
 		var date = eventDateArr2[2];
 		var year = eventDateArr3[0].trim();
 		var time = eventDateArr3[1].trim();
-	
-		
+			
 		var finalDate = '<div class="event-month">' + month + '</div>'
 		              + '<div class="event-date">' + pad(date,2)  + '</div>'
 		              + '<div class="event-year">' + year  + '</div>'
@@ -182,7 +181,21 @@ jQuery( document ).ready(function($){
 		
 		$(this).html(finalDate);
 	});
-  
+
+
+	$('#block-views-block-latest-announcements-block-1 .views-field-title').each(function(){
+		var raw_date = $(this).siblings('.views-field-created').text().split(', ');
+		var only_date = raw_date[1].split(' - ');
+		var fullDate = new Date();
+		//Format - Thu May 12 2016 17:16:38 GMT+1000 {}
+		 
+		//convert month to 2 digits
+		var twoDigitMonth 	= ((fullDate.getMonth().length+1) === 1)? (fullDate.getMonth()+1) : '0' + (fullDate.getMonth()+1);
+		var currentDate 	=  twoDigitMonth + "/" + fullDate.getDate() + "/" + fullDate.getFullYear();
+		//05/12/2016		
+	
+	});
+	
   
   
   

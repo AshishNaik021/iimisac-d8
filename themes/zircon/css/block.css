@@ -51,9 +51,9 @@
 }
 /* line 8, ../sass/block.scss */
 .site-logo img {
-  width: 145px;
+    width: 116px;
+    margin-top: 23px;
 }
-
 /* line 13, ../sass/block.scss */
 .messages--status {
   margin-bottom: 20px;
@@ -560,7 +560,7 @@
 #main .container {
   background: #fff;
   padding: 15px;
-  height: 1000px;
+  height:auto;
 }
 /* line 516, ../sass/block.scss */
 #main .container .content .node--view-mode-teaser .field-type-image {
