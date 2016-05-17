@@ -971,7 +971,7 @@ select#edit-field-gender {
     padding: 2%;
     height: 315px;
     margin-left: 989px;
-    margin-top: 30px;
+    margin-top: 51px;
     border: 10px solid #6B8CD0;
 }
 #block-userlogin-3 li a{
@@ -985,7 +985,7 @@ select#edit-field-gender {
     padding: 2%;
     height: 155px;
     margin-left: 988px;
-    margin-top: 31px;
+    margin-top: 54px;
     border: 10px solid #6B8CD0;
 }
 nav#block-useraccountmenu li a{
@@ -998,7 +998,7 @@ nav#block-useraccountmenu li{
     padding: 2%;
     margin-left: 15px;
     /* width: 21%; */
-    margin-top: 33px;
+    margin-top: 52px;
 }
 nav#block-useraccountmenu h2{
 	display:none;
@@ -1072,15 +1072,22 @@ form#node-application-form-form {
     float: left;
 }
 
-#block-loginiconblock{
-	cursor:pointer;
-	Width: 64px;
+#block-loginiconblock {
+    cursor: pointer;
+    Width: 64px;
     height: 64px;
     float: right;
     border: 2px solid #47639E;
     border-radius: 100%;
-    margin-right: -67px;
+    margin-right: -55px;
+    margin-top: -12px;
+}
+#block-loginiconblock h2 {
     margin-top: -33px;
+    width: 88px;
+    font-size: 17px;
+    margin-left: -11px;
+	color: #47639E;
 }
 .ui-state-default{
 	background-color:#F7F7F7 !important;

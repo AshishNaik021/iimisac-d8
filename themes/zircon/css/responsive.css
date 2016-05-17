@@ -859,7 +859,7 @@ width: 100px !important;
 #block-loginiconblock{
 	margin-left:-40px;
 	float:left;
-	margin-top:20px;
+	margin-top:42px;
 }
 #block-useraccountmenu{
 float: left;
@@ -1116,5 +1116,9 @@ span.views-label.views-label-field-last-date-to-apply {
 }
 .views-field.views-field-field-company-name .field-content{
 	font-size:12px;
+}
+.site-logo img{
+width: 76px;
+margin-top: 28px;
 }
 }
