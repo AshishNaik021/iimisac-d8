@@ -184,15 +184,30 @@ jQuery( document ).ready(function($){
 
 
 	$('#block-views-block-latest-announcements-block-1 .views-field-title').each(function(){
+		//Find Date from Announcement News in mm/dd/yyyy format
 		var raw_date = $(this).siblings('.views-field-created').text().split(', ');
 		var only_date = raw_date[1].split(' - ');
+		
+		
+		//Fin Current Date in mm/dd/yyyy format
 		var fullDate = new Date();
-		//Format - Thu May 12 2016 17:16:38 GMT+1000 {}
+		//fullDate is in Format - Thu May 12 2016 17:16:38 GMT+1000 {}
 		 
 		//convert month to 2 digits
 		var twoDigitMonth 	= ((fullDate.getMonth().length+1) === 1)? (fullDate.getMonth()+1) : '0' + (fullDate.getMonth()+1);
 		var currentDate 	=  twoDigitMonth + "/" + fullDate.getDate() + "/" + fullDate.getFullYear();
-		//05/12/2016		
+		//Now the format is 05/12/2016		
+	
+		//Convert both dates into DATE format
+		var news_publish_date = new Date(only_date[0]);
+		var current_date      = new Date(currentDate);
+		var miliSecondsPerDay = 1000 * 60 * 60 * 24;
+		var days_since_publish = (current_date.getTime() - news_publish_date.getTime()) / miliSecondsPerDay;
+		
+		//Add New Image to the post which is less than 3 days old.
+		if(days_since_publish <= 3){
+			$(this).parent().addClass('newPost');
+		}
 	
 	});
 	
