@@ -205,17 +205,21 @@ margin: -8px -1px 15px -24px;
 #block-views-block-ipm-club-block-2 h2,
 #block-views-block-pgp-club-block-2 h2,
 #block-views-block-ipm-committees-block-1 h2,
-#block-views-block-pgp-committees-block-1 h2{
+#block-views-block-pgp-committees-block-1 h2,
+#block-views-block-pgp-article-block-1 h2,
+#block-views-block-ipm-article-block-1 h2{
      margin-left: 1px !important;
 }
 div#block-views-block-latest-news-events-block-1 .views-field.views-field-title{
 	font-size:1.1em  !important;
 	width:200px !important ;
 }
-.views-field.views-field-field-news-events-image {
+.views-field.views-field-field-news-events-image ,
+#block-views-block-pgp-article-block-1 .views-field.views-field-field-news-image,
+#block-views-block-ipm-article-block-1 .views-field.views-field-field-news-image{
     width: 30%;
     float: left;
-	height: 170px;
+	height: 170px !important;
 	margin-top: 12px;
 }
 .sidebar-first.views-field.views-field-title{
@@ -409,7 +413,6 @@ div#block-views-block-latest-articles-block-2 .views-field-view-node{
     width: 80px;
     color: #fff !important;
     padding: 5px 10px 9px 6px;
-	margin-left:20px;
 }
 .views-field.views-field-field-apply-now {
 	 background: #6B8CD0;
@@ -827,8 +830,11 @@ input#edit-preview:hover,.form-submit:hover {
 	display:none;
 }
 span.views-field.views-field-field-company-logo {
-    height: 230px;
+    height: 300px;
     float: left;
+}
+.views-field.views-field-field-last-date-to-apply{
+	height:45px;
 }
 .views-label.views-label-field-company-name,
 .views-label.views-label-field-club-committee-name,
@@ -974,7 +980,7 @@ select#edit-field-gender {
     padding: 2%;
     height: 315px;
     margin-left: 989px;
-    margin-top: 51px;
+    margin-top: 24px;
     border: 10px solid #6B8CD0;
 }
 #block-userlogin-3 li a{
@@ -985,11 +991,18 @@ select#edit-field-gender {
     position: absolute;
     z-index: 566;
     background-color: #47639E;
-    padding: 2%;
     height: 155px;
     margin-left: 988px;
-    margin-top: 54px;
+    margin-top: 24px;
     border: 10px solid #6B8CD0;
+}
+nav#block-useraccountmenu ul{
+	background-color: #ff0;
+    height: 41px;
+    margin-top: 92px;
+    width: 100%;
+    margin-left: 0px;
+    padding: 7px;
 }
 nav#block-useraccountmenu li a{
 	color:#fff;
@@ -999,9 +1012,9 @@ nav#block-useraccountmenu li{
     text-align: center;
     float: left;
     padding: 2%;
-    margin-left: 15px;
+    margin-left: 30px;
     /* width: 21%; */
-    margin-top: 52px;
+    margin-top: 0px;
 }
 nav#block-useraccountmenu h2{
 	display:none;
@@ -1083,7 +1096,7 @@ form#node-application-form-form {
     border: 2px solid #47639E;
     border-radius: 100%;
     margin-right: -55px;
-    margin-top: -12px;
+    margin-top: -40px;
 }
 #block-loginiconblock h2 {
     margin-top: -33px;
@@ -1243,8 +1256,9 @@ form#contact-message-feedback-form  input#edit-name
 	color:#fff;
 }
 span.views-label.views-label-field-last-date-to-apply {
-    width: 31%;
+    width: 23%;
     float: left;
+	font-weight: bold;
 }
 #block-views-block-live-project-block-1 span.views-label.views-label-field-last-date-to-apply{
 	width:0;
@@ -1532,4 +1546,17 @@ div#block-views-block-meet-the-team-block-1  .views-field.views-field-user-pictu
 #block-views-block-latest-articles-ipm-block-1 .views-row.clearfix.row-1,
 #block-views-block-live-project-block-1 .views-row.clearfix.row-1{
 	border-bottom:0;
+}
+#views_slideshow_cycle_main_event_slideshow-block_1 .views-field.views-field-field-news-events-image{
+	margin-top:0;
+}
+
+#block-loginiconblock h2{
+	margin-top: 62px;
+    position: absolute;
+}
+div#block-views-block-pgp-club-block-1-2 .views-field.views-field-field-club-logo img,
+div#block-views-block-ipm-club-block-1-7 .views-field.views-field-field-ipm-logo img{
+	height:70px;
+	width: 53px !important;
 }

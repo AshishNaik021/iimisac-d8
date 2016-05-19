@@ -60,11 +60,11 @@ jQuery( document ).ready(function($){
 	$(function() {
             $( "#tabs4" ).tabs();
          });
-	$('#block-views-block-latest-articles-block-2').addClass('front-page-tabs-4');
-	$('#block-views-block-latest-articles-ipm-block-2').addClass('front-page-tabs-4');
+	$('#block-views-block-pgp-article-block-1').addClass('front-page-tabs-4');
+	$('#block-views-block-ipm-article-block-1').addClass('front-page-tabs-4');
 	$('.front-page-tabs-4').wrapAll('<div id="tabs4"> </div>');
 	
-	$('#tabs4').prepend("<ul><li> <a href='#block-views-block-latest-articles-block-2'> PGP Articles </a></li><li> <a href='#block-views-block-latest-articles-ipm-block-2'> IPM Articles</a></li></ul>");
+	$('#tabs4').prepend("<ul><li> <a href='#block-views-block-pgp-article-block-1'> PGP Articles </a></li><li> <a href='#block-views-block-ipm-article-block-1'> IPM Articles</a></li></ul>");
  
 	 
 

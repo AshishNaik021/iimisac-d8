@@ -857,7 +857,7 @@ width: 100px !important;
 	margin-top: 55px;
 }
 #block-loginiconblock{
-	margin-left:-40px;
+	margin-left:-55px;
 	float:left;
 	margin-top:42px;
 }
@@ -1118,7 +1118,27 @@ span.views-label.views-label-field-last-date-to-apply {
 	font-size:12px;
 }
 .site-logo img{
-width: 76px;
-margin-top: 28px;
+   width: 76px;
+   margin-top: 28px;
+   margin-left: 10px;
+}
+.block-social-media-links .horizontal li{
+	padding: 0.2em 0.35em;
+   width: 22px;
+    margin-left: 17px;
+}
+#main .container .content .views-row {
+  border-top: 0px solid #dadada;
+  border-top-style: dotted;
+  margin-bottom: 0px;
+  padding-top: 0px;
+}
+#block-views-block-pgp-latest-news-events-block-1 .views-field.views-field-body p,
+#block-views-block-latest-news-events-ipm-block-1 .views-field.views-field-body p{
+	height:70px;
+}
+#block-views-block-pgp-latest-news-events-block-1,
+#block-views-block-latest-news-events-ipm-block-1 {
+    min-height: 700px;
 }
 }

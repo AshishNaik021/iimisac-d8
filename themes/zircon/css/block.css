@@ -175,7 +175,7 @@
 }
 /* line 120, ../sass/block.scss */
 #main-menu .container ul.menu li .is-active {
-  background-color: #47639E;
+  background-color: #47639E !important;
  
 }
 /* line 129, ../sass/block.scss */
