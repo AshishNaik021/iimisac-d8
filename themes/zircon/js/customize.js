@@ -142,6 +142,7 @@ jQuery( document ).ready(function($){
 	$('#tabs7').prepend("<ul><li> <a href='#block-views-block-pgp-latest-news-events-block-1-2'> PGP Events </a></li><li> <a href='#block-views-block-latest-news-events-ipm-block-1-2 '> IPM Events</a></li></ul>");
  
  
+ 
    //----------------------------------------------------------------------------
    //   Format Date Display
    //----------------------------------------------------------------------------
@@ -250,15 +251,96 @@ jQuery( document ).ready(function($){
 		
 		$(this).html(finalDate);
 	});
-  console.log("Menu I am here!	");
+	$('#block-views-block-pgp-latest-news-events-block-4 .datetime').each(function(){
+		var eventDate = $(this).text();
+		var eventDateArr1 = eventDate.split(',');
+		var eventDateArr2 = eventDateArr1[1].split(' ');
+		var eventDateArr3 = eventDateArr1[2].split('-');
+		var month = eventDateArr2[1];
+		var date = eventDateArr2[2];
+		var year = eventDateArr3[0].trim();
+		var time = eventDateArr3[1].trim();
+	
+		
+		var finalDate = '<div class="event-month">' + month + '</div>'
+		              + '<div class="event-date">' + pad(date,2)  + '</div>'
+		              + '<div class="event-year">' + year  + '</div>'
+		              + '<div class="event-time">' + time  + '</div>';
+		
+		$(this).html(finalDate);
+	});
+	$('#block-views-block-latest-news-events-ipm-block-3 .datetime').each(function(){
+		var eventDate = $(this).text();
+		var eventDateArr1 = eventDate.split(',');
+		var eventDateArr2 = eventDateArr1[1].split(' ');
+		var eventDateArr3 = eventDateArr1[2].split('-');
+		var month = eventDateArr2[1];
+		var date = eventDateArr2[2];
+		var year = eventDateArr3[0].trim();
+		var time = eventDateArr3[1].trim();
+	
+		
+		var finalDate = '<div class="event-month">' + month + '</div>'
+		              + '<div class="event-date">' + pad(date,2)  + '</div>'
+		              + '<div class="event-year">' + year  + '</div>'
+		              + '<div class="event-time">' + time  + '</div>';
+		
+		$(this).html(finalDate);
+	});
+	$('#block-views-block-latest-news-events-ipm-block-1-4 .datetime').each(function(){
+		var eventDate = $(this).text();
+		var eventDateArr1 = eventDate.split(',');
+		var eventDateArr2 = eventDateArr1[1].split(' ');
+		var eventDateArr3 = eventDateArr1[2].split('-');
+		var month = eventDateArr2[1];
+		var date = eventDateArr2[2];
+		var year = eventDateArr3[0].trim();
+		var time = eventDateArr3[1].trim();
+	
+		
+		var finalDate = '<div class="event-month">' + month + '</div>'
+		              + '<div class="event-date">' + pad(date,2)  + '</div>'
+		              + '<div class="event-year">' + year  + '</div>'
+		              + '<div class="event-time">' + time  + '</div>';
+		
+		$(this).html(finalDate);
+	});
+	$('#block-views-block-pgp-latest-news-events-block-1-4 .datetime').each(function(){
+		var eventDate = $(this).text();
+		var eventDateArr1 = eventDate.split(',');
+		var eventDateArr2 = eventDateArr1[1].split(' ');
+		var eventDateArr3 = eventDateArr1[2].split('-');
+		var month = eventDateArr2[1];
+		var date = eventDateArr2[2];
+		var year = eventDateArr3[0].trim();
+		var time = eventDateArr3[1].trim();
+	
+		
+		var finalDate = '<div class="event-month">' + month + '</div>'
+		              + '<div class="event-date">' + pad(date,2)  + '</div>'
+		              + '<div class="event-year">' + year  + '</div>'
+		              + '<div class="event-time">' + time  + '</div>';
+		
+		$(this).html(finalDate);
+	});
+  console.log("Menu club 1!	");
    $("ul.menu > li.menu-item--expanded > ul.menu > li.menu-item--expanded > ul.menu > li.menu-item--expanded > ul.menu").addClass("menu-12");
    $("ul.menu > li.menu-item--expanded > ul.menu > li.menu-item--expanded > ul.menu > li.menu-item--expanded").hover(function() {
 	   $(this).children().toggleClass("menu-12");
    });
-  console.log("Menu I am here2!	");
+  console.log("Menu club 2!	");
+  
+  
+  console.log("Menu committees 1!");
+   $("ul.menu > li.menu-item menu-item--expanded > ul.menu  ").addClass("menu-123");
+   $("ul.menu > li.menu-item menu-item--expanded > ul.menu  > li.menu-item menu-item--expanded").hover(function() {
+	   $(this).children().toggleClass("menu-123");
+   });
+  console.log("Menu committees 2!	");
+
 
 });
-
+   
 function pad (str, max) {
   str = str.toString();
   return str.length < max ? pad("0" + str, max) : str;

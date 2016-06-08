@@ -1,0 +1,82 @@
+<?php
+
+/**
+ * @file
+ * Install, update, and uninstall functions for the Photos Access module.
+ */
+
+/**
+ * Implements hook_schema().
+ */
+function photos_access_schema() {
+  $schema['photos_access_album'] = array(
+    'fields' => array(
+      'id' => array(
+        'type' => 'serial',
+        'not null' => TRUE
+      ),
+      'nid' => array(
+        'type' => 'int',
+        'unsigned' => TRUE,
+        'not null' => TRUE
+      ),
+      'viewid' => array(
+        'type' => 'int',
+        'size' => 'tiny',
+        'length' => 1,
+        'default' => 0,
+        'description' => '0: Open, 1: Locked, 2: User list, 3: Password'
+      ),
+      'updateid' => array(
+        'type' => 'int',
+        'size' => 'tiny',
+        'length' => 1,
+        'default' => 0
+      ),
+      'pass' => array(
+        'type' => 'varchar',
+        'length' => 128,
+        'default' => ''
+      ),
+    ),
+    'indexes' => array(
+      'nid' => array('nid'),
+    ),
+    'primary key' => array('id'),
+  );
+
+  $schema['photos_access_user'] = array(
+    'fields' => array(
+      'id' => array(
+        'type' => 'int',
+        'unsigned' => TRUE,
+        'not null' => TRUE
+      ),
+      'uid' => array(
+        'type' => 'int',
+        'unsigned' => TRUE,
+        'not null' => TRUE
+      ),
+    ),
+    'indexes' => array(
+      'uid' => array('uid'),
+    ),
+  );
+
+  return $schema;
+}
+
+/**
+ * Implements hook_uninstall().
+ */
+function photos_access_uninstall() {
+  // Update photos module settings.
+  if (\Drupal::moduleHandler()->moduleExists('photos')) {
+    \Drupal::configFactory()->getEditable('photos.settings')->set('photos_access_photos', 0)->save();
+  }
+  // Delete photos_access settings.
+  $types = \Drupal\node\Entity\NodeType::loadMultiple();
+  foreach ($types as $type) {
+    \Drupal::configFactory()->getEditable('photos_access_' . $type->id())->delete();
+  }
+}

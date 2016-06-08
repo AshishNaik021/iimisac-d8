@@ -1,0 +1,15 @@
+id: d7_photos_access_user
+label: Photos access
+migration_tags:
+  - Drupal 7
+source:
+  plugin: photos_access_user
+process:
+  id: id
+  uid: uid
+destination:
+  plugin: photos_access_user
+  provider: photos_access
+migration_dependencies:
+  optional:
+    - d7_user
