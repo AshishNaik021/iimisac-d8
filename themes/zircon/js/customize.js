@@ -165,6 +165,7 @@ jQuery( document ).ready(function($){
 		
 		$(this).html(finalDate);
 	});
+
     $('#block-views-block-latest-news-events-ipm-block-1 .datetime').each(function(){
 		var eventDate = $(this).text();
 		var eventDateArr1 = eventDate.split(',');
@@ -184,6 +185,33 @@ jQuery( document ).ready(function($){
 	});
 
 
+    $('#block-views-block-fests-evnts-block-1 .datetime').each(function(){
+		var eventDate = $(this).text();
+		var eventDateArr1 = eventDate.split(',');
+		var day = eventDateArr1[0];
+		
+		var eventDateArr2 = eventDateArr1[1].split(' ');
+		var eventDateArr3 = eventDateArr1[2].split('-');
+		var month = eventDateArr2[1];
+		var date = eventDateArr2[2];
+		var year = eventDateArr3[0].trim();
+		var time = eventDateArr3[1].trim();
+			
+		var finalDate = '<div class="fest-full-date">'
+						  + '<div class="fest-day">'   + day 	+ '</div>'
+						  + '<div class="fest-date">'  + pad(date,2)  + '</div>'
+						  + '<div class="fest-month">' + month + '</div>'
+						  + '<div class="fest-year">'  + year  + '</div>'
+					   + '</div>'
+					   + '<div class="fest-time">'  + time  + '</div>';
+		
+		$(this).html(finalDate);
+	});
+
+	
+   //----------------------------------------------------------------------------
+   //   Add "NEW" icon to new announcement
+   //----------------------------------------------------------------------------
 	$('#block-views-block-latest-announcements-block-1 .views-field-title').each(function(){
 		//Find Date from Announcement News in mm/dd/yyyy format
 		var raw_date = $(this).siblings('.views-field-created').text().split(', ');
