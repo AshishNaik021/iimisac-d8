@@ -1052,15 +1052,19 @@ select#edit-field-gender {
 }
 
 #block-userlogin-3{
-	width: 19%;
+	width: 25%;
     position: absolute;
     z-index: 600;
     background-color: #47639E;
     padding: 2%;
-    height: 315px;
-    margin-left: 989px;
+    height: 540px;
+    margin-left: 908px;
     margin-top: 24px;
     border: 10px solid #EB6A14;
+}
+
+details.captcha.js-form-wrapper.form-wrapper {
+    width: 275px;
 }
 
 #block-userlogin-3 li a{
@@ -1106,8 +1110,11 @@ nav#block-useraccountmenu {
     margin-top: 11px;
 }
  #block-userlogin-3 .user-login-form .form-text{
-	 width:165px;
+	 width:252px;
  }
+ #block-userlogin-3 summary {
+    color: #fff;
+}
 #tabs li, 
 #tabs1 li {
     width: 40%;
@@ -2000,4 +2007,7 @@ div#block-views-block-events-calendar-block-block-1{
     position: relative;
     text-align: center;
 	padding: 20% 4% 0% 0%;
+}
+details.captcha.js-form-wrapper.form-wrapper .details-description{
+	display:none;
 }

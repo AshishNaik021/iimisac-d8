@@ -8,8 +8,8 @@ configure: captcha_settings
 dependencies:
   - node
 
-# Information added by Drupal.org packaging script on 2015-11-25
-version: '8.x-1.0-alpha0'
+# Information added by Drupal.org packaging script on 2016-06-05
+version: '8.x-1.0-alpha0+1-dev'
 core: '8.x'
 project: 'captcha'
-datestamp: 1448461743
+datestamp: 1465136945
