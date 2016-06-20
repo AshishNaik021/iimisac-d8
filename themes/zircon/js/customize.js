@@ -1,7 +1,31 @@
 jQuery.noConflict();
 jQuery( document ).ready(function($){
-	$('tr:odd').addClass('odd-row');			
+	//----------------------------------------------------------------------------
+	// To Validate Mail id in Registration form - for @iimidr.ac.in
+	//----------------------------------------------------------------------------
 
+	$('#edit-mail').focusout(function(){
+		var mailid = $(this).val();
+		if(mailid != ''){
+			var mailid_parts = mailid.split('@');
+			var domain_name = mailid_parts[1];
+			if(domain_name != "iimidr.ac.in"){
+				$('#edit-submit').attr('disabled', 'disabled');
+				alert("Your mail id domain must be '@iimidr.ac.in'. Please correct the mail id!");
+			}else{
+				$('#edit-submit').removeAttr('disabled');	
+			}
+		}
+	});
+	
+	
+	
+	
+	
+	
+	
+	
+	$('tr:odd').addClass('odd-row');			
 	//----------------------------------------------------------------------------
 	// Add Tabs on Front Page Blocks using JQuery UI library. 
 	//----------------------------------------------------------------------------

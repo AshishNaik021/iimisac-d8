@@ -180,7 +180,7 @@ p {
     -webkit-border-top-right-radius: 5px;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
-    font-size: 1.23em;
+    font-size: 1.14286em;
 }
 div#block-views-block-latest-articles-block-1 h2{
 margin: -10px -1px 15px -24px;
@@ -214,10 +214,23 @@ div#block-views-block-latest-news-events-block-1 .views-field.views-field-title{
 	font-size:1.1em  !important;
 	width:200px !important ;
 }
-.views-field.views-field-field-news-events-image ,
+
 #block-views-block-pgp-article-block-1 .views-field.views-field-field-news-image,
 #block-views-block-ipm-article-block-1 .views-field.views-field-field-news-image{
     width: 30%;
+    float: left;
+	height: 170px !important;
+	margin-top: 12px;
+}
+div#block-views-block-pgp-latest-news-events-block-2 .views-field.views-field-field-news-events-image,
+div#block-views-block-latest-news-events-ipm-block-2 .views-field.views-field-field-news-events-image{
+	width: 30%;
+    float: left;
+	height: 170px !important;
+	margin-top: 12px;
+}
+.views-field.views-field-field-news-events-image{
+	 width: 23%;
     float: left;
 	height: 170px !important;
 	margin-top: 12px;
@@ -746,10 +759,10 @@ div#block-views-block-latest-news-events-block-1 h2 {
 	font-size:11px;
 }
 ul.inline li a, ul.links.inline li a{
-	background-color:#6B8CD0 !important;
+	    background: none !important;
 }
 ul.inline li a:hover,ul.links.inline li a:hover{
-	background-color:#47639E !important;
+	    background: none !important;
 }
 span.fa.fa-envelope.fa-2x,
 span.fa.fa-twitter.fa-2x, 
@@ -761,7 +774,6 @@ span.fa.fa-youtube.fa-2x{
     margin-left: -10px;
     margin-top: -4px;
     padding: 20%;
-	 border-radius: 20%;
 }
 ul.inline li a{
 	  border-radius: 20% !important;
@@ -770,14 +782,16 @@ span.fa.fa-envelope.fa-3x,
 span.fa.fa-twitter.fa-3x, 
 span.fa.fa-facebook.fa-3x,
 span.fa.fa-youtube.fa-3x{
-    font-size: 30px;
-    width: 60px;
-    height: 44px;
-    margin-left: -1px;
-    margin-top: 0px;
-    padding: 10%;
-	color:#fff;
-    border-radius: 20%;
+    height: 48px;
+	width: 48px;
+	margin: 4px;
+	float: left;
+	-webkit-transition: all ease 0.3s;
+	-moz-transition: all ease 0.3s;
+	-o-transition: all ease 0.3s;
+	-ms-transition: all ease 0.3s;
+	transition: all ease 0.3s;
+	padding-top: 7px;
 }
 span.fa.fa-envelope.fa-2x,
 span.fa.fa-envelope.fa-3x{
@@ -785,11 +799,12 @@ span.fa.fa-envelope.fa-3x{
 }
 span.fa.fa-twitter.fa-2x,
 span.fa.fa-twitter.fa-3x{
-    background-color:rgb(0, 172, 237);;
+    background-color:rgb(0, 172, 237);
 }
 span.fa.fa-twitter.fa-2x:hover,
 span.fa.fa-twitter.fa-3x:hover{
-    background-color:rgb(0, 147, 212);;
+   background-position: 0px -48px;
+	box-shadow: 0px 0px 4px 1px rgba(0,0,0,0.8);
 }
 span.fa.fa-facebook.fa-2x,
 span.fa.fa-facebook.fa-3x{
@@ -797,7 +812,18 @@ span.fa.fa-facebook.fa-3x{
 }
 span.fa.fa-facebook.fa-2x:hover,
 span.fa.fa-facebook.fa-3x:hover{
-	background-color:rgb(34, 64, 127);
+	background-position: 0px -48px;
+	box-shadow: 0px 0px 4px 1px rgba(0,0,0,0.8);
+}
+span.fa.fa-youtube.fa-2x:hover,
+span.fa.fa-youtube.fa-3x:hover{
+	background-position: 0px -48px;
+	box-shadow: 0px 0px 4px 1px rgba(0,0,0,0.8);
+}
+span.fa.fa-envelope.fa-2x:hover,
+span.fa.fa-envelope.fa-3x:hover{
+   background-position: 0px -48px;
+	box-shadow: 0px 0px 4px 1px rgba(0,0,0,0.8);
 }
 span.fa.fa-youtube.fa-2x,
 span.fa.fa-youtube.fa-3x{
@@ -828,6 +854,7 @@ ul.inline .node-readmore a, ul.links.inline .node-readmore a{
     color: #fff;
     border-radius: 6px;
 	margin-bottom: 20px;
+	margin-top: 24px;
 }
 
 #block-views-block-video-carousel-block-1-5{
@@ -961,9 +988,10 @@ span.views-field.views-field-field-company-logo {
 .content label.js-form-required.form-required{
 	font-size:18px;
 	color:#47639E;
-	width:100%;
+	width:75%;
 		
 }
+
 .description{
    width: 96%;
 }
@@ -972,7 +1000,7 @@ span.views-field.views-field-field-company-logo {
 }
 form#user-register-form,
 form#user-pass {
-    width: 66%;
+    width: 80%;
     margin: auto;
 	border:3px solid #777;
 	background-color:#fcfcfc;
@@ -982,16 +1010,38 @@ form#user-pass {
 form#user-register-form details#edit-contact {
     display: none;
 }
+.js-form-item.form-item.js-form-type-password.form-type-password.js-form-item-pass-pass2.form-item-pass-pass2.confirm-parent{
+	    float: right;
+    margin-top: -107px;
+    /* margin-left: -31px; */
+    margin-right: 38px;
+}
+div#edit-field-program-name-wrapper label,
+#edit-field-last-name-wrapper label{
+	font-size: 18px;
+    color: #47639E;
+}
+
 #edit-account .form-email ,
 input#edit-name {
 	 width:95.6% !important;
 	 margin-bottom: 6px;
  }
+ #edit-pass-pass1,
+ #edit-pass-pass2,
+ #edit-field-roll-number-0-value{
+	 width:370px !important;
+	border: 2px solid #333;
+ }
+ #edit-mail{
+	 border: 2px solid #333;
+ }
 input#edit-field-first-name-0-value,
 input#edit-field-last-name-0-value,
 select#edit-field-program-name,
 select#edit-field-gender {
-    width: 285px;
+    width: 370px;
+	border: 2px solid #333;
 }
 #edit-field-first-name-wrapper,
 #edit-field-last-name-wrapper,
@@ -1065,8 +1115,18 @@ select#edit-field-gender {
 
 details.captcha.js-form-wrapper.form-wrapper {
     width: 275px;
+    /* height: 20px; */
+    /* border: 0; */
+    margin-top: 730px;
+    margin-left: 1px;
 }
-
+div#block-userlogin-3 details.captcha.js-form-wrapper.form-wrapper {
+	 width: 275px;
+    /* height: 20px; */
+    /* border: 0; */
+    margin-top: 13px;
+    margin-left: 1px;
+}
 #block-userlogin-3 li a{
     color: #fff;
 }
@@ -1401,7 +1461,7 @@ span.views-label.views-label-field-last-date-to-apply {
     width: 27%;
 }
 #block-views-block-article-slideshow1-block-1 .views-field.views-field-title{
-	margin-bottom:-75px !important;
+	margin-bottom:-58px !important;
 }
 #block-views-block-event-slideshow-block-1-2,
 #block-views-block-video-slide-block-1-2 {
@@ -1613,17 +1673,16 @@ h2,h3,a,p{
     float: right;
 }
 #block-socialmedialinks-2 ul li a {
-	width:60px;
 	padding:0 !important;
 }
 ul.menu.menu-12 {
     display: none !important;
 }
 #edit-account label {
-	color:#333 !important;
+	color:#47639E !important;
 }
 #edit-field-team-member-of-ipm-club-wrapper {
-    width: 33%;
+    width: 24%;
     border: 2px solid;
     float: left;
     padding: 1%;
@@ -1637,11 +1696,19 @@ ul.menu.menu-12 {
 }
 #edit-field-pgp-committee-wrapper {
     height: 645px;
-	width: 34%;
+	width: 24%;
     border: 2px solid;
     float: left;
     margin-left: 22px;
     padding: 1%;
+}
+fieldset#edit-field-events-fests--wrapper{
+	width: 18%;
+    border: 2px solid;
+    float: left;
+    margin-left: 22px;
+    padding: 1%;
+    margin-top: 0px;
 }
 div#block-views-block-site-map-block-1 h2{
 	font-size:35px;
@@ -1661,8 +1728,10 @@ div#block-views-block-carousel-block-1-4 {
     margin-right: 29px;
 }
 div#block-views-block-carousel-block-1-3 h2,
-div#block-views-block-video-carousel-block-1-5 h2 {
+div#block-views-block-video-carousel-block-1-5 h2,
+#block-views-block-events-calendar-block-block-1 h2 {
 	margin-left:20px;
+	color:#fff;
 }
 div#block-views-block-projects-block-1-2 .views-row{
 	margin-top:15px;
@@ -1815,6 +1884,14 @@ div#block-views-block-ipm-club-block-1-4 .views-row.clearfix.row-3{
     padding-left: 15px;
     color: #fff;
 }
+.views-field.views-field-title.video-title a :hover{
+    opacity: 0;
+    filter: alpha(opacity=0);
+    -webkit-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    -o-transform: scale(0.9);
+    transform: scale(0.9);
+}
 div#block-views-block-carousel-block-1-3  .more-link,
 #block-views-block-video-carousel-block-1-5 .more-link{
 	float: right;
@@ -1876,26 +1953,28 @@ div#block-views-block-carousel-block-1-3  .more-link,
 }
 div#block-views-block-events-calendar-block-block-1 .views-field.views-field-title a{
 	background-color: rgba(0, 0, 0, 0.7);
-    width: 23%;
+    width: 261px;
     position: absolute;
-    z-index: 0;
+    z-index: 16;
     font-size: 1.8em;
-    margin-top: 109px;
+    margin-top: 84px;
     padding-left: 15px;
     color: #fff;
+	margin-left: 14px;
 }
+
 #block-views-block-events-calendar-block-block-1 h2{
 	font-size: 22px !important;
 }
 div#block-views-block-events-calendar-block-block-1{
-	height:255px;
+	height:236px;
+	background-color:#56BBB8;
+	padding: 1%;
 }
 #block-views-block-events-calendar-block-block-1 .more-link{
     float: right;
     margin-right: 4px;
 }
-
-
 
 .fest-full-date{
 	width: 30%;
@@ -2010,4 +2089,33 @@ div#block-views-block-events-calendar-block-block-1{
 }
 details.captcha.js-form-wrapper.form-wrapper .details-description{
 	display:none;
+}
+
+
+div#block-views-block-events-calendar-block-block-1 .views-row.clearfix.row-1{
+	background:none;
+	
+}
+.views-field.views-field-field-fests-club-logo img{
+	display:block;
+    position:relative;
+    z-index:10;
+    margin:-15px 0;
+	 backface-visibility:hidden;
+    -webkit-transition:all .5s;
+    -moz-transition:all .5s;
+    transition:all .5s;
+	margin-left: 14px;
+}
+.field.field--name-field-fests-club-logo.field--type-image.field--label-hidden.field__item.quickedit-field img{
+	width: 34%;
+    margin-top: 15px;
+    float: left;
+}
+.field.field--name-field-fests-banner.field--type-image.field--label-hidden.field__item.quickedit-field {
+	border: 6px solid #333;
+    padding: 1%;
+}
+#edit-captcha-response{
+	width:200px !important;
 }
