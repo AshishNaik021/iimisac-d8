@@ -51,8 +51,8 @@
 }
 /* line 8, ../sass/block.scss */
 .site-logo img {
-    width: 155px;
-    margin-top: 29px;
+    width: 130px;
+    margin-top: 37px;
 }
 /* line 13, ../sass/block.scss */
 .messages--status {
@@ -87,18 +87,20 @@
 }
 /* line 35, ../sass/block.scss */
 #header .search-block-form {
-  float: right;
-  background: #fff;
-  border: 1px solid #E7E8E9;
-  border-radius: 3px;
-  -webkit-border-radius: 3px;
-  display: block;
-  height: 33px;
-  padding: 5px 5px 0 10px;
-  width: 243px;
-  position: relative;
-  margin-top: 4px;
+ float: right;
+    background: #333444;
+    border: 1px solid #333444;
+    border-radius: 3px;
+    -webkit-border-radius: 100%;
+    display: block;
+    height: 33px;
+    padding: 11px 9px 0 8px;
+    width: 32px;
+    position: relative;
+    margin-top: -47px;
+	margin-right: 14px;
 }
+
 /* line 47, ../sass/block.scss */
 #header .search-block-form .form-item {
   margin: 0;
@@ -148,20 +150,27 @@
 }
 /* line 93, ../sass/block.scss */
 #main-menu .container {
-  background-color:#EB6A14;
-  height: 45px;
-  margin-top: 30px;
+  background-color:#222333;
+     height: 100px;
+    margin-top: -12px;
 }
 /* line 103, ../sass/block.scss */
 #main-menu .container ul.menu {
-  margin: 0;
+    margin: 0;
+    margin-left: 251px;
+    margin-top: 17px;
+}
+form#search-block-form {
+    /* float: right; */
+    position: relative;
+    margin-left: 900px;
+
 }
 /* line 105, ../sass/block.scss */
 #main-menu .container ul.menu li {
   display: block;
   float: left;
   padding: 0;
-  border-left: 1px solid #444;
   position: relative;
 }
 /* line 111, ../sass/block.scss */
@@ -175,12 +184,13 @@
 }
 /* line 120, ../sass/block.scss */
 #main-menu .container ul.menu li .is-active {
-  background-color: #E05915!important;
+  background-color: #38B1EC!important;
+   height: 63px;
 
 }
 /* line 129, ../sass/block.scss */
 #main-menu .container ul.menu li.menu-item--active-trail > a {
-  background-color:#EB6A14;
+  background-color:#222333;
 
 }
 /* line 138, ../sass/block.scss */
@@ -197,7 +207,8 @@
 }
 /* line 149, ../sass/block.scss */
 #main-menu .container ul.menu li:hover > a, #main-menu .container ul.menu li:focus > a {
-  background-color:#E05915;
+  background-color:#38B1EC;
+      height: 63px;
 }
 /* line 157, ../sass/block.scss */
 #main-menu .container ul.menu li:hover ul.menu, #main-menu .container ul.menu li:focus ul.menu {
@@ -210,7 +221,7 @@
 /* line 164, ../sass/block.scss */
 #main-menu .container ul.menu .menu-item--expanded > a {
   padding-right: 25px;
-  background-color:#EB6A14;
+  background-color:#222333;
 }
 /* line 166, ../sass/block.scss */
 #main-menu .container ul.menu .menu-item--expanded > a:before {
@@ -235,6 +246,29 @@
   border: 2px solid #272727;
   width: 220px;
   display: none;
+  margin-left: 0px;
+  margin-top: 17px;
+}
+nav#block-headernav{
+	margin-top: -51px;
+    float: right;
+       margin-right: 148px;
+}
+nav#block-headernav ul{
+	  width:247px;
+}
+nav#block-headernav li a{
+	    float: left;
+    margin-top: 8px;
+    padding-left: 20px;
+    font-size: 16px;
+}
+nav#block-headernav li a:hover{
+	    float: left;
+    margin-top: 8px;
+    padding-left: 20px;
+    font-size: 16px;
+	color:#E19943;
 }
 /* line 192, ../sass/block.scss */
 #main-menu .container ul.menu ul.menu li {
@@ -248,10 +282,11 @@
 #main-menu .container ul.menu ul.menu li a {
   color: #fff;
   border-radius: 0;
-  background-color:#EB6A14;
+  background-color:#222333;
   padding: 7px 15px;
   text-transform: none;
   font-family: arial;
+      height: 35px;
 }
 /* line 205, ../sass/block.scss */
 #main-menu .container ul.menu ul.menu li a:hover, #main-menu .container ul.menu ul.menu li a:focus {
@@ -271,6 +306,7 @@
 /* line 220, ../sass/block.scss */
 #main-menu .container ul.menu ul.menu li:first-child {
   border: none;
+      height: 35px;
 }
 /* line 225, ../sass/block.scss */
 #main-menu .container ul.menu ul.menu li:hover > a, #main-menu .container ul.menu ul.menu li:focus > a {
@@ -288,7 +324,7 @@
 /* line 236, ../sass/block.scss */
 #main-menu .container ul.menu ul.menu li ul.menu {
   left: 190px;
-  top: 10px;
+  top: -12px;
   display: none;
 }
 /* line 243, ../sass/block.scss */
@@ -337,6 +373,7 @@
 /* line 292, ../sass/block.scss */
 #slideshow .container .views-field {
   margin-bottom: 0;
+  
 }
 /* line 294, ../sass/block.scss */
 #slideshow .container .views-field a {
@@ -344,7 +381,7 @@
 }
 /* line 303, ../sass/block.scss */
 #slideshow .container .views-field-title {
-  background-color: rgba(0, 0, 0, 0.7);
+ 
   width: 100%;
   position: absolute;
   bottom: 0;
@@ -409,7 +446,7 @@
   bottom: 0;
   left: 0;
   background: rgba(0, 0, 0, 0.8);
-  width: 100%;
+  width: 83%;
   margin-bottom: 0;
   padding: 16px;
   font-family: "oswaldregular";
@@ -453,7 +490,7 @@
 /* line 406, ../sass/block.scss */
 #slideshow .flex-control-nav {
   bottom: 18px;
-  right: 12px;
+  right: 113px;
   z-index: 2;
   text-align: right;
 }
@@ -501,7 +538,10 @@
 }
 /* line 449, ../sass/block.scss */
 #slideshow .flex-direction-nav .flex-next {
-  right: 15px;
+  right: 112px;
+}
+#slideshow_container{
+	height:495px!important;
 }
 /* line 451, ../sass/block.scss */
 #slideshow .flex-direction-nav .flex-next:before {
@@ -662,7 +702,7 @@
 /* line 616, ../sass/block.scss */
 .sidebar h2 {
   color: white;
-  background-color:#EB6A14;
+  background-color:#222333;
   margin: -15px -15px 15px -15px;
   padding: 10px 15px;
   text-transform: uppercase;
