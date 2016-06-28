@@ -196,8 +196,10 @@ p {
     border-top-right-radius: 5px;
     font-size: 1.14286em;
 }
-div#block-views-block-latest-articles-block-1 h2{
-margin: -10px -1px 15px -24px;
+#block-views-block-latest-articles-block-1 h2,
+div#block-views-block-latest-articles-ipm-block-1 h2 {
+    margin: -11px -1px 15px -24px;
+    border-radius: 0;
 }
 #block-views-block-live-project-block-1 h2{
 	color: white;
@@ -223,7 +225,8 @@ margin: -10px -1px 15px -24px;
 #block-views-block-pgp-committees-block-1 h2,
 #block-views-block-pgp-article-block-1 h2,
 #block-views-block-ipm-article-block-1 h2{
-     margin-left: 1px !important;
+    margin-left: 1px !important;
+	border-radius: 0;
 }
 div#block-views-block-latest-news-events-block-1 .views-field.views-field-title{
 	font-size:1.1em  !important;
@@ -267,7 +270,7 @@ div#block-views-block-latest-news-events-ipm-block-2 .views-field.views-field-fi
 span.views-field.views-field-title a  {
 	font-size: 25px;
 	font-size: 25px;
-	color:#47639E ;
+	color:#222333 ;
 }
 .content .views-field-title {
 	font-size: 21px;
@@ -413,7 +416,7 @@ span.views-field.views-field-body p{
 #block-views-block-latest-articles-block-1 .views-field-title a,
 #block-views-block-live-projects-block-1-4 .views-field-title a,
 #block-views-block-latest-articles-ipm-block-1 .views-field-title a{
-	color:#555 !important;
+	color:#222333 !important;
 }
 .content .views-field-title a:hover{
     color: #47639E;
@@ -431,6 +434,7 @@ span.views-field.views-field-body p{
 .views-field-view-node a:hover{
 	color:#fff !important;
 }
+/*
 #block-views-block-latest-articles-block-1 .views-field-view-node ,
 #block-views-block-live-project-block-1 .views-field-view-node ,
 #block-views-block-latest-articles-ipm-block-1 .views-field-view-node,
@@ -440,7 +444,6 @@ span.views-field.views-field-body p{
     padding: 1px 0px 0px 4px;
     margin-left: 0;
     border-radius: 5px;
-
 }
 #block-views-block-latest-articles-block-1 .views-field-view-node:hover ,
 #block-views-block-live-project-block-1 .views-field-view-node :hover,
@@ -452,37 +455,49 @@ span.views-field.views-field-body p{
     margin-left: 0;
     border-radius: 5px;
 }
+*/
+
 div#block-views-block-latest-articles-ipm-block-2 .views-field-view-node,
 div#block-views-block-latest-articles-block-2 .views-field-view-node{
      display:none;
 }
+
+/*
 .views-field-view-node{
-    background:#2CAAA6;
-    width: 80px;
+    background: #38B1EC;
     color: #fff !important;
-    padding: 5px 10px 9px 6px;
-	border-radius: 6px;
+    padding: 3px 6px 5px 4px;
+    border-radius: 6px;
+    font-size: 10px;
 }
 .views-field-view-node:hover{
     background:#222333;
-    width: 80px;
     color: #fff !important;
-    padding: 5px 10px 9px 6px;
+    padding: 3px 6px 5px 4px;
+    border-radius: 6px;
+    font-size: 10px;
 }
+*/
 .views-field.views-field-field-apply-now {
-	 background: #2CAAA6;
-    width: 80px;
+	 background: #38B1EC;
+    /* width: 80px; */
     color: #fff !important;
-    padding: 5px 10px 9px 6px;
-	margin-left:20px;
-	border-radius: 6px;
+    padding: 3px 6px 5px 6px;
+   margin-left: 224px;
+    border-radius: 6px;
+    font-size: 10px;
+	float:left;
+	margin-bottom: 13px;
 }
 .views-field.views-field-field-apply-now:hover {
 	 background: #222333;
-    width: 80px;
-    color: #fff !important;
-    padding: 5px 10px 9px 6px;
-	margin-left:20px;
+   color: #fff !important;
+    padding: 3px 6px 5px 6px;
+   margin-left: 224px;
+    border-radius: 6px;
+    font-size: 10px;
+	float:left;
+	margin-bottom: 13px;
 }
 #block-views-block-live-project-block-1 .views-field.views-field-field-apply-now {
 	background: #6B8CD0;
@@ -523,17 +538,17 @@ div#block-views-block-latest-articles-block-2 .views-field-view-node{
 	padding: 6px 5px 5px 6px;
 }
 
-.more-link{
-	 background: #38B1EB;
-    /* width: 84px; */
+.more-link,
+.views-field-view-node{
+	background: #38B1EB;
     color: #fff !important;
     padding: 3px 10px;
     float: right;
-    /* margin-left: 130px; */
     border-radius: 6px;
     font-size: 10px;
 }
-.more-link:hover{
+.more-link:hover,
+.views-field-view-node:hover{
 	background: #555666;
     color: #fff !important;
     padding: 3px 10px;
@@ -542,9 +557,18 @@ div#block-views-block-latest-articles-block-2 .views-field-view-node{
     border-radius: 6px;
     font-size: 10px;
 }
-.more-link a{
+.more-link a,
+.views-field-view-node a{
 	color:#fff !important;
+	padding: 0px !important;
 }
+.views-field-view-node{
+	margin-right: 10%;
+}
+.views-field-view-node a:before{
+	display: none !important;
+}
+
 input#edit-submit--2{
 	background: #6B8CD0 ! important;
 }
@@ -991,7 +1015,7 @@ input#edit-preview:hover,.form-submit:hover {
 	display:none;
 }
 span.views-field.views-field-field-company-logo {
-    height: 300px;
+    height: 256px;
     float: left;
 }
 .views-field.views-field-field-last-date-to-apply{
@@ -1005,7 +1029,6 @@ span.views-field.views-field-field-company-logo {
 .views-label.views-label-field-number-of-openings,
 .views-label.views-label-field-report,
 .views-label.views-label-field-target-audience{
-    float: left;
 	color:#333;
 	width:24%;
 	font-size: 17px;
@@ -1240,6 +1263,7 @@ nav#block-useraccountmenu {
     text-align: center;
 	line-height: 2.7;
     list-style-type: none;
+	margin-left: -1px;
 }
 .region.region-sidebar-second .ui-widget-header{
 	margin-top:10px;
@@ -1249,13 +1273,13 @@ nav#block-useraccountmenu {
  .region.region-sidebar-second .ui-widget-header,
  .content .ui-widget-header{
 	background: none;
-    border-bottom: 2px solid #3489DA !important;
-    border: 1px solid #F6F6F6;
     color: #FFFFFF;
     font-weight: bold;
-    height: 42px;
+    height: 41px;
     text-decoration: none;
 	padding:0;
+	margin-bottom: 7px;
+	border: none;
  }
  li.ui-state-default.ui-corner-top {
     background-color: #3489DA;
@@ -1464,15 +1488,19 @@ form#contact-message-feedback-form  input#edit-name
     /* margin-bottom: 26px; */
     font-weight: bold;
     padding: 0%;
-    margin-top: 77px;
+	margin:0;
+    margin-top: 77px !important;
     border: 3px solid #56BBB8;
     text-align: center;
 	border-radius: 6px;
+	background: none;
 }
 #block-views-block-live-project-block-1  .views-field.views-field-field-company-name {
     color: #666;
     font-weight: bold;
 	height: 23px;
+	width: 100%;
+    box-shadow: none;
 }
 #block-views-block-live-project-block-1 .views-field.views-field-body {
       height: 89px;
@@ -1589,6 +1617,7 @@ div#block-views-block-video-slide-block-1-2{
     border: 4px solid #222333;
 	min-height: 877px;
     margin-top: -10px;
+	border-radius: 0;
 }
 .sidebar h2{
 	  -webkit-border-top-left-radius: 0px !important;
@@ -2334,4 +2363,13 @@ div#block-views-block-latest-news-events-ipm-block-1 .more-link {
 #panel_second .container{
 	border-radius: 0px !important; 
     -webkit-border-radius: 0px !important; 
+}
+#block-views-block-pgp-latest-news-events-block-4 {
+	min-height: 858px;
+}
+#block-views-block-pgp-latest-news-events-block-4 .more-link{
+    margin-top: 13px;
+}
+div#block-views-block-carousel-block-1-4 .more-link{
+	    margin-top: -42px;
 }
