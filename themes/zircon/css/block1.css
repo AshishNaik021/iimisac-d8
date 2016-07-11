@@ -539,7 +539,7 @@ nav#block-headernav li a:hover{
 }
 /* line 449, ../sass/block.scss */
 #slideshow .flex-direction-nav .flex-next {
-  right: 44px;
+  right: 112px;
 }
 #slideshow_container{
 	height:495px!important;
@@ -692,7 +692,7 @@ nav#block-headernav li a:hover{
 /* sidebar */
 /* line 607, ../sass/block.scss */
 .sidebar .block {
-  padding: 15px;
+  padding: 5%;
   margin-bottom: 15px;
   border: 1px solid #dadada;
 }
@@ -739,8 +739,8 @@ div#block-views-block-latest-announcements-block-1-3 .views-field.views-field-cr
 #block-views-block-latest-announcements-block-1  .views-row,
 #block-views-block-latest-announcements-block-1-2   .views-row,
 #block-views-block-latest-announcements-block-1-3 .views-row,
-#block-views-block-latest-announcements-block-1-4 .views-row{
-  padding-left: 10%;
+#block-views-block-latest-announcements-block-1-4 .views-row {
+  padding-left: 8%;
   padding-right: 3%;
   padding-top: 15px !important;
   padding-bottom: 15px !important;
@@ -755,29 +755,128 @@ div#block-views-block-latest-announcements-block-1-3 .views-field.views-field-cr
 }
 
 #block-views-block-latest-announcements-block-1  .views-row:hover,
+#block-views-block-latest-announcements-block-1  .views-row:hover a,
 #block-views-block-latest-announcements-block-1-2   .views-row:hover,
 #block-views-block-latest-announcements-block-1-2   .views-row:hover a,
-#block-views-block-latest-announcements-block-1-3 .views-row:hover,
-#block-views-block-latest-announcements-block-1-3 .views-row:hover a,
-#block-views-block-latest-announcements-block-1-4  .views-row:hover a{
+div#block-views-block-latest-announcements-block-1-3 .views-row:hover,
+div#block-views-block-latest-announcements-block-1-3 .views-row:hover a,
+#block-views-block-latest-announcements-block-1-4  .views-row:hover,
+#block-views-block-latest-announcements-block-1-4 .views-row:hover a{
   background: #555666;
   color: #ccc;
 }
 #block-views-block-latest-announcements-block-1  .views-row a:hover,
 #block-views-block-latest-announcements-block-1-2   .views-row a:hover,
-#block-views-block-latest-announcements-block-1-3 .views-row a:hover,
+div#block-views-block-latest-announcements-block-1-3 .views-row a:hover,
 #block-views-block-latest-announcements-block-1-4 .views-row a:hover{
   background: #555666;
   color: #fff;
 }
 #block-views-block-latest-announcements-block-1  .views-field-created,
 #block-views-block-latest-announcements-block-1-2   .views-field-created,
-#block-views-block-latest-announcements-block-1-3 .views-field-created,
+div#block-views-block-latest-announcements-block-1-3 .views-field-created,
 #block-views-block-latest-announcements-block-1-4 .views-field-created{
   font-size: 12px !important;
 }
 
-
+.field--name-field-last-date-to-apply{
+  width: 100%;
+  float: left;
+  background: #666999;
+  color: #fff;
+  margin: 10px 0px;
+}
+.views-field.views-field-field-last-date-to-apply{
+    width: 70%;
+    float: left;
+    background: #666999;
+    color: #fff;
+    margin: 4px 0px 1px 227px;
+    padding: 1%;
+}
+.field--name-field-club-committee-name,
+.field--name-field-company-name,
+.field--name-field-functional-domains,
+.field--name-field-location,
+.field--name-field-duration,
+.field--name-field-target-audience,
+.field--name-field-number-of-openings,
+.field--name-field-report
+{
+  box-shadow: 0px 0px 3px #999;
+  height: 66px;
+  width: 48%;
+  float: left;
+  padding: 10px 1%;
+  margin: 1%;
+}
+.views-field.views-field-field-club-committee-name,
+.views-field.views-field-field-company-name,
+.views-field.views-field-field-duration,
+.views-field.views-field-field-functional-domains,
+.views-field.views-field-field-location,
+.views-field.views-field-field-number-of-openings,
+.views-field.views-field-field-report,
+.views-field.views-field-field-target-audience{
+	box-shadow: 0px 0px 3px #999;
+    height: 46px;
+    width: 34%;
+    float: left;
+    padding: 1px 1%;
+    margin: 0.7%;
+}
+}
+div#block-views-block-live-project-block-1 .views-field.views-field-field-company-name{
+	box-shadow: none;
+    width: 100%;
+    float: none;
+    padding: 0;
+    margin: 0;
+}
+span.views-field.views-field-title {
+    float: left;
+    width: 600px;
+}
+.field--name-field-club-committee-name .field__label,
+.field--name-field-company-name .field__label,
+.field--name-field-functional-domains .field__label,
+.field--name-field-location .field__label,
+.field--name-field-duration .field__label,
+.field--name-field-target-audience .field__label,
+.field--name-field-number-of-openings .field__label,
+.field--name-field-report .field__label{
+  width: 100%;
+}
+.field--name-field-club-logo{
+  width: 50%;
+  float: left;
+}
+.block-views-blockprojects-block-1 .views-row{
+  box-shadow: 0px 0px 3px #999;
+  width: 106%;
+  margin-left: -3%;
+  height: 135px;
+}
+.block-views-blockprojects-block-1 .views-field-field-company-logo img{
+  width: 90%;
+  height: auto;
+  margin-top: -10%;
+}
+ .block-views-blockprojects-block-1 .views-field-field-club-committee-name{
+  background: #aaaccc;
+  margin-top: 10%;
+  text-align: center;
+  line-height: 27px;
+}
+.block-views-blockprojects-block-1 .views-field-field-club-committee-name a{
+  color: #fff;
+}
+.block-views-blockprojects-block-1 .views-field-field-company-logo,
+.block-views-blockprojects-block-1 .views-field-title{
+  width: 48%;
+  background: #ff0;
+  float: left;
+}
 
 /* line 640, ../sass/block.scss */
 .sidebar .views-row p {
@@ -1007,12 +1106,10 @@ div#block-views-block-latest-announcements-block-1-3 .views-field.views-field-cr
   font-size: 1.23em;
   text-transform: uppercase;
   color: white;
-  border-bottom: 1px solid rgb(80,80,80);
-    padding-bottom: 7px;
 }
 /* line 861, ../sass/block.scss */
 #panel_second a {
-  color: #fff;
+  color: #c9c9c9;
 }
 /* line 864, ../sass/block.scss */
 #panel_second a:hover, #panel_second a:focus {

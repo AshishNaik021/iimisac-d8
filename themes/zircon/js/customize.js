@@ -18,11 +18,7 @@ jQuery( document ).ready(function($){
 		}
 	});
 	
-	
-	
-	
-	
-	
+	//----------------------------------------------------------------------------
 	
 	
 	$('tr:odd').addClass('odd-row');			
@@ -375,22 +371,25 @@ jQuery( document ).ready(function($){
 		
 		$(this).html(finalDate);
 	});
-  console.log("Menu club 1!	");
-   $("ul.menu > li.menu-item--expanded > ul.menu > li.menu-item--expanded > ul.menu > li.menu-item--expanded > ul.menu").addClass("menu-12");
-   $("ul.menu > li.menu-item--expanded > ul.menu > li.menu-item--expanded > ul.menu > li.menu-item--expanded").hover(function() {
+
+	$("ul.menu > li.menu-item--expanded > ul.menu > li.menu-item--expanded > ul.menu > li.menu-item--expanded > ul.menu").addClass("menu-12");
+	$("ul.menu > li.menu-item--expanded > ul.menu > li.menu-item--expanded > ul.menu > li.menu-item--expanded").hover(function() {
 	   $(this).children().toggleClass("menu-12");
    });
-  console.log("Menu club 2!	");
   
   
-  console.log("Menu committees 1!");
    $("ul.menu > li.menu-item menu-item--expanded > ul.menu  ").addClass("menu-123");
    $("ul.menu > li.menu-item menu-item--expanded > ul.menu  > li.menu-item menu-item--expanded").hover(function() {
 	   $(this).children().toggleClass("menu-123");
    });
-  console.log("Menu committees 2!	");
 
+	//-------------------------------------------------------------------------
+	// Add Icon to different file types in Announcements. 
+	//-------------------------------------------------------------------------
 
+	
+   
+   
 });
    
 function pad (str, max) {
