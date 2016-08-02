@@ -116,6 +116,31 @@ jQuery( document ).ready(function($){
    
    
    //----------------------------------------------------------------------------
+	// Add Tabs on Latest News & Events page using JQuery UI library. 
+	//----------------------------------------------------------------------------
+	$(function() {
+            $( "#tabs7" ).tabs();
+         });
+	$('#block-views-block-pgp-latest-news-events-block-1-2').addClass('front-page-tabs-7');
+	$('#block-views-block-latest-news-events-ipm-block-1-2 ').addClass('front-page-tabs-7');
+	$('.front-page-tabs-7').wrapAll('<div id="tabs7"> </div>');
+	
+	$('#tabs7').prepend("<ul><li> <a href='#block-views-block-pgp-latest-news-events-block-1-2'> PGP Events </a></li><li> <a href='#block-views-block-latest-news-events-ipm-block-1-2 '> IPM Events</a></li></ul>");
+	
+	
+	//----------------------------------------------------------------------------
+	// Add Tabs on Latest News & Events page using JQuery UI library. 
+	//----------------------------------------------------------------------------
+	$(function() {
+            $( "#tabs8" ).tabs();
+         });
+	$('#block-views-block-latest-pgp-events-grid-block-1').addClass('front-page-tabs-8');
+	$('#block-views-block-latest-ipm-events-grid-block-1 ').addClass('front-page-tabs-8');
+	$('.front-page-tabs-8').wrapAll('<div id="tabs8"> </div>');
+	
+	$('#tabs8').prepend("<ul><li> <a href='#block-views-block-latest-pgp-events-grid-block-1'> PGP Events </a></li><li> <a href='#block-views-block-latest-ipm-events-grid-block-1 '> IPM Events</a></li></ul>");
+   
+   //----------------------------------------------------------------------------
 	// Add Tabs on Login And Logout page using JQuery UI library. 
 	//----------------------------------------------------------------------------
 	 $('#block-loginiconblock').click(function(){
@@ -149,24 +174,50 @@ jQuery( document ).ready(function($){
     });
      
    
-	//----------------------------------------------------------------------------
-	// Add Tabs on Latest News & Events page using JQuery UI library. 
-	//----------------------------------------------------------------------------
-	$(function() {
-            $( "#tabs7" ).tabs();
-         });
-	$('#block-views-block-pgp-latest-news-events-block-1-2').addClass('front-page-tabs-7');
-	$('#block-views-block-latest-news-events-ipm-block-1-2 ').addClass('front-page-tabs-7');
-	$('.front-page-tabs-7').wrapAll('<div id="tabs7"> </div>');
-	
-	$('#tabs7').prepend("<ul><li> <a href='#block-views-block-pgp-latest-news-events-block-1-2'> PGP Events </a></li><li> <a href='#block-views-block-latest-news-events-ipm-block-1-2 '> IPM Events</a></li></ul>");
  
  
  
    //----------------------------------------------------------------------------
    //   Format Date Display
    //----------------------------------------------------------------------------
+   
+	$('#block-views-block-latest-pgp-events-grid-block-1 .datetime').each(function(){
+		var eventDate = $(this).text();
+		var eventDateArr1 = eventDate.split(',');
+		var eventDateArr2 = eventDateArr1[1].split(' ');
+		var eventDateArr3 = eventDateArr1[2].split('-');
+		var month = eventDateArr2[1];
+		var date = eventDateArr2[2];
+		var year = eventDateArr3[0].trim();
+		var time = eventDateArr3[1].trim();
+	
 
+		var finalDate = '<div class="event-month">' + month + '</div>'
+		              + '<div class="event-date">' + pad(date,2)  + '</div>'
+		              + '<div class="event-year">' + year  + '</div>' 
+		              + '<div class="event-time">' + time  + '</div>';
+		
+		$(this).html(finalDate);
+	});
+	$('#block-views-block-latest-ipm-events-grid-block-1 .datetime').each(function(){
+		var eventDate = $(this).text();
+		var eventDateArr1 = eventDate.split(',');
+		var eventDateArr2 = eventDateArr1[1].split(' ');
+		var eventDateArr3 = eventDateArr1[2].split('-');
+		var month = eventDateArr2[1];
+		var date = eventDateArr2[2];
+		var year = eventDateArr3[0].trim();
+		var time = eventDateArr3[1].trim();
+	
+
+		var finalDate = '<div class="event-month">' + month + '</div>'
+		              + '<div class="event-date">' + pad(date,2)  + '</div>'
+		              + '<div class="event-year">' + year  + '</div>' 
+		              + '<div class="event-time">' + time  + '</div>';
+		
+		$(this).html(finalDate);
+	});
+	
     $('#block-views-block-pgp-latest-news-events-block-1 .datetime').each(function(){
 		var eventDate = $(this).text();
 		var eventDateArr1 = eventDate.split(',');
@@ -186,6 +237,10 @@ jQuery( document ).ready(function($){
 		$(this).html(finalDate);
 	});
 
+	
+
+	
+	
     $('#block-views-block-latest-news-events-ipm-block-1 .datetime').each(function(){
 		var eventDate = $(this).text();
 		var eventDateArr1 = eventDate.split(',');

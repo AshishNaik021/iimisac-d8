@@ -149,7 +149,7 @@ p {
     padding: 1% 0% 3% 3%;
 	border-right: 1px solid #fff;
 	font-size: 20px;
-	background-color:#222334;
+	background-image:url("../../zircon/images/bg-2.gif");
   border-top-left-radius: 7px;
   border-bottom-left-radius: 7px;
     margin-top: 7px;
@@ -161,7 +161,7 @@ p {
     color: #fff;
     padding: 1% 0% 3% 3%;
 	font-size: 20px;
-	background-color:#222334;
+	background-image:url("../../zircon/images/bg-2.gif");
   border-top-right-radius: 7px;
   border-bottom-right-radius: 7px;
   margin-top: 7px;
@@ -181,7 +181,10 @@ p {
 	border-right: 1px solid #dadada;
 	border-bottom: 1px solid #dadada;
 	padding-bottom: 35px;
-    margin-left: 2px;
+	height: 425px;
+    overflow-y: auto;
+    overflow-x: hidden;
+	margin-top: -9px;
 }
 
 div#block-views-block-latest-articles-block-1 h2,
@@ -193,7 +196,9 @@ div#block-views-block-ipm-club-block-2 h2,
 div#block-views-block-pgp-committees-block-1 h2,
 div#block-views-block-ipm-committees-block-1 h2,
 div#block-views-block-pgp-article-block-1 h2,
-div#block-views-block-ipm-article-block-1 h2{
+div#block-views-block-ipm-article-block-1 h2,
+#block-views-block-latest-pgp-events-grid-block-1 h2,
+div#block-views-block-latest-ipm-events-grid-block-1 h2{
     color: white;
     background-color: #222333;
     margin: -8px -1px 15px -24px;
@@ -203,9 +208,14 @@ div#block-views-block-ipm-article-block-1 h2{
     border-top-right-radius: 5px;
     font-size: 1.14286em;
 }
+#block-views-block-latest-pgp-events-grid-block-1 h2,
+#block-views-block-latest-ipm-events-grid-block-1 h2{
+        margin: 0px -4px 17px -16px !important;
+}
+
 div#block-views-block-latest-articles-block-1 h2,
 div#block-views-block-latest-articles-ipm-block-1 h2{
-	margin-top: -10px;
+	margin: 0px -7px 16px -24px !important;
 }
 #block-views-block-latest-articles-block-1 h2,
 div#block-views-block-latest-articles-ipm-block-1 h2 {
@@ -284,7 +294,7 @@ span.views-field.views-field-title a  {
 	color:#222333 ;
 }
 .content .views-field-title {
-	font-size: 21px;
+	font-size: 19px;
 	color:#47639E ;
 }
 .content .views-field-title a{
@@ -329,6 +339,20 @@ div#block-views-block-latest-news-events-ipm-block-1-4 .views-field.views-field-
     margin: 1px 7px 4px -14px;
 	background-repeat: no-repeat;
 	font-weight: bold;
+}
+div#block-views-block-latest-pgp-events-grid-block-1 .views-field.views-field-field-sheduled-date-time,
+div#block-views-block-latest-ipm-events-grid-block-1 .views-field.views-field-field-sheduled-date-time{
+    width: 57%;
+    height: 120px;
+    font-family: 'Century Gothic';
+    /* float: left; */
+    background-image: url("../../zircon/images/calendar1.png") !important;
+    background-size: 100px 105px;
+    color: #333;
+    padding: 14% 0% 0% 9%;
+    margin: 3px 8px 1px 6px;
+    background-repeat: no-repeat;
+    font-weight: bold;
 }
 #block-views-block-latest-news-events-block-1 .views-field.views-field-body p,
 #block-views-block-pgp-latest-news-events-block-1 .views-field.views-field-body p,
@@ -388,6 +412,13 @@ span.views-field.views-field-body p{
 	height: 76px;
 	width: 90%;
 }
+div#block-views-block-latest-pgp-events-grid-block-1 .views-field-title,
+div#block-views-block-latest-ipm-events-grid-block-1.views-field-title{
+	font-size: 14px;
+	width: 90%;
+	text-align: center;
+    margin-left: -25px;
+}
 #block-views-block-live-project-block-1 .views-field-title{
 	font-size: 1.1em;
 	height: 65px;
@@ -427,7 +458,9 @@ span.views-field.views-field-body p{
 }
 #block-views-block-latest-articles-block-1 .views-field-title a,
 #block-views-block-live-projects-block-1-4 .views-field-title a,
-#block-views-block-latest-articles-ipm-block-1 .views-field-title a{
+#block-views-block-latest-articles-ipm-block-1 .views-field-title a,
+#block-views-block-latest-pgp-events-grid-block-1 .views-field-title a,
+#block-views-block-latest-pgp-events-grid-block-1.views-field-title a{
 	color:#222333 !important;
 	font-weight: bold;
 }
@@ -621,7 +654,8 @@ td.views-field.views-field-title {
 	font-size:10px;
 }
 tr {
-    border-bottom: 2px solid;
+    border-top: 1px solid #dadada;
+    border-top-style: dotted;
 }
 table.views-table.views-view-table.cols-4 {
     width: 80%;
@@ -658,6 +692,9 @@ div#block-views-block-announcements-block-1-2{
 #block-views-block-discussion-forum-block-1 {
 	padding:0px;
     margin-top: 30px;
+	height: 450px;
+    overflow-y: auto;
+    overflow-x: hidden;
 }
 .sidebar-first .views-field-title{
 	margin-left: 31px;
@@ -695,7 +732,7 @@ header#header {
 a.site-logo {
         width: 160px !important;
     margin-left: 40px;
-    margin-top: -24px;
+    margin-top: -25px;
     float: left;
 }
 #block-zircon-search {
@@ -712,13 +749,12 @@ a.site-logo {
 }
 .views-field.views-field-field-ipm-logo,
 .views-field.views-field-field-club-logo {
-    float: left;
     width: 120px;
 	height: 120px;
     border: 1px solid #dadada;
     padding: 10px;
     background-color: #fcfcfc;
-	margin: 11px 17px 11px 24px;
+	margin: 11px 17px 11px 0px;
 }
 .views-field.views-field-field-committees-images{
 	float: left;
@@ -885,11 +921,20 @@ span.fa.fa-twitter.fa-3x:hover{
 
 span.fa.fa-facebook.fa-3x{
 	background-color:rgb(59, 89, 152);
+	color:#fff;
 }
-span.fa.fa-facebook.fa-2x:hover,
+/*span.fa.fa-facebook.fa-2x:hover,
 span.fa.fa-facebook.fa-3x:hover{
 	background-position: 0px -48px;
 	box-shadow: 0px 0px 4px 1px rgba(0,0,0,0.8);
+}*/
+@keyframes ul.platforms.inline.horizontal a {
+	0% {opacity: 0;}
+	100% {opacity: 1;}
+}
+
+ul.platforms.inline.horizontal a {
+	-webkit-animation-name: ul.platforms.inline.horizontal a;
 }
 span.fa.fa-youtube.fa-2x:hover,
 span.fa.fa-youtube.fa-3x:hover{
@@ -906,7 +951,7 @@ span.fa.fa-youtube.fa-3x{
 	background-color:#C71D20;
 }
 #block-socialmedialinks-2 li a{
-	color:#666 !important;
+	color:#fff !important;
 }
 #block-socialmedialinks-2 li a :hover{
 	color:#fff !important;
@@ -941,7 +986,7 @@ div#block-views-block-video-carousel-block-1-5 .view-content{
 	margin-top: -8px;
 }
 #block-views-block-video-carousel-block-1-5{
-	margin-top: 390px;
+	margin-top: 25px;
     padding: 6px;
     font-size: 20px;
 	margin-left: -15px;
@@ -964,14 +1009,15 @@ div#block-views-block-video-carousel-block-1-5 .view-content{
 .sidebar #block-views-block-discussion-forum-block-1 h2 {
     color: white;
     background-color: #222333;
-    margin: -13px -1px 5px 0px;
-    padding: 10px 15px;
+    margin: -1px -5px -2px 0px;
+    padding: 12px 13px;
     text-transform: uppercase;
     -webkit-border-top-left-radius: 5px;
     -webkit-border-top-right-radius: 5px;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
     font-size: 1.23em;
+    height: 46px;
 }
 .slick-slide.slick-active {
 	 -webkit-transition: all .3s ease;
@@ -1123,17 +1169,13 @@ input#edit-name {
  #edit-pass-pass2,
  #edit-field-roll-number-0-value{
 	 width:370px !important;
-	border: 2px solid #333;
  }
- #edit-mail{
-	 border: 2px solid #333;
- }
+ 
 input#edit-field-first-name-0-value,
 input#edit-field-last-name-0-value,
 select#edit-field-program-name,
 select#edit-field-gender {
     width: 370px;
-	border: 2px solid #333;
 }
 #edit-field-first-name-wrapper,
 #edit-field-last-name-wrapper,
@@ -1143,7 +1185,8 @@ select#edit-field-gender {
 	float:left;
 }
 
-#tabs2 li {
+#tabs2 li,
+#tabs8 li {
 	float: left;
     width: 23%;
     text-align: center;
@@ -1154,6 +1197,9 @@ select#edit-field-gender {
     border-top: 1px solid #afafaf/*{borderColorDefault}*/;
 	border-left: 1px solid #afafaf/*{borderColorDefault}*/;
 	border-right: 1px solid #afafaf/*{borderColorDefault}*/;
+}
+#tabs8 li {
+	    margin-top: -21px;
 }
 #tabs2 li .contextual-region {
     width: 23%;
@@ -1197,9 +1243,9 @@ select#edit-field-gender {
 	width: 25%;
     position: absolute;
     z-index: 600;
-    background-color: #222333;
+    background-color: #fff;
     padding: 2%;
-    height: 510px;
+    height: 322px;
     margin-left: 908px;
     margin-top: -7px;
     border: 6px solid #2CAAA6;
@@ -1221,7 +1267,7 @@ div#block-userlogin-3 details.captcha.js-form-wrapper.form-wrapper {
     margin-left: 1px;
 }
 #block-userlogin-3 li a{
-    color: #fff;
+    color: #333;
 }
  nav#block-useraccountmenu{
     width: 19%;
@@ -1266,7 +1312,7 @@ nav#block-useraccountmenu {
 	 width:252px;
  }
  #block-userlogin-3 summary {
-    color: #fff;
+    color: #333;
 }
 #tabs li,
 #tabs1 li {
@@ -1370,7 +1416,7 @@ form#node-application-form-form {
 }
 #block-userlogin-3 h2{
 	margin-top: -21px;
-    color: #fff;
+    color: #333;
 }
 div#block-views-block-projects-block-1-2 .views-field.views-field-field-company-logo {
     float: left;
@@ -1410,10 +1456,10 @@ form#contact-message-feedback-form  input#edit-name
 .event-month{
 	margin-top: -12px;
     color: #fff;
-    font-size: larger;
+    font-size: medium;
     text-transform: uppercase;
-	text-align: center;
-    margin-left: -9px;
+    text-align: center;
+    margin-left: -2px;
     width: 93%;
 }
 .event-date{
@@ -1421,7 +1467,7 @@ form#contact-message-feedback-form  input#edit-name
     text-align: center;
     margin-left: -3px;
     font-weight: bold;
-    margin-top: -3px;
+    margin-top: 3px;
     border-bottom: 1px solid #aaa;
     width: 66%;
     padding-bottom: 2px;
@@ -1452,6 +1498,9 @@ form#contact-message-feedback-form  input#edit-name
 
 .region.region-sidebar-second #block-views-block-discussion-forum-block-1-3 {
     padding: 0 !important;
+	height: 450px;
+    overflow-y: auto;
+    overflow-x: hidden;
 }
 .region.region-sidebar-second #block-views-block-discussion-forum-block-1-3 h2{
 	margin:0  !important;
@@ -1467,8 +1516,10 @@ form#contact-message-feedback-form  input#edit-name
 #block-views-block-latest-announcements-block-1 ,
 #block-views-block-latest-announcements-block-1-4,
 #block-views-block-latest-announcements-block-1-2{
-    min-height: 455px;
-    margin-bottom: 15px;
+   height: 435px;
+    /* margin-bottom: 15px; */
+    overflow-y: auto;
+    overflow-x: hidden;
 }
  #block-views-block-latest-announcements-block-1 .views-row{
 	padding:1% !important;
@@ -1526,6 +1577,9 @@ span.views-label.views-label-field-last-date-to-apply {
     width: 23%;
     float: left;
 	font-weight: bold;
+}
+div#block-views-block-projects-block-1-2 span.views-label.views-label-field-last-date-to-apply {
+	 width: 30%;
 }
 #block-views-block-live-project-block-1 span.views-label.views-label-field-last-date-to-apply{
 	width:0;
@@ -1626,10 +1680,13 @@ div#block-views-block-video-slide-block-1-2{
 }
 #block-views-block-pgp-latest-news-events-block-1 ,
 #block-views-block-latest-news-events-ipm-block-1{
-    border: 4px solid #222333;
-	min-height: 877px;
+    border: 1px solid #dadada;
+    height: 750px;
     margin-top: -10px;
-	border-radius: 0;
+    border-radius: 0;
+    overflow-y: auto;
+    overflow-x: hidden;
+    width: 265px;
 }
 .sidebar h2{
 	  -webkit-border-top-left-radius: 0px !important;
@@ -1913,7 +1970,10 @@ div#block-views-block-latest-news-events-ipm-block-1 .view-content {
 	    height: 725px !important;
 }
 .views-field.views-field-field-company-logo{
-	margin-left:22px;
+    float: left;
+    margin-right: 6px;
+    height: 65px;
+    padding: 7px;
 }
 div#block-views-block-live-project-block-1 .views-field.views-field-field-company-logo{
 	height:58px;
@@ -1928,10 +1988,10 @@ article.contextual-region.node.node--type-news-events.node--view-mode-full img {
 	padding:2%;
 	width: 280px;
 }
-div#block-views-block-pgp-club-block-2 .views-row,
-div#block-views-block-ipm-club-block-2 .views-row{
-	height: 165px;
-    margin-top:8px;
+div#block-views-block-pgp-club-block-2 .views-row, 
+div#block-views-block-ipm-club-block-2 .views-row {
+    height: 265px;
+    margin-top: 8px;
 }
 div#block-views-block-pgp-latest-news-events-block-1-3  article,
 div#block-views-block-pgp-latest-news-events-block-1-3  p{
@@ -1971,20 +2031,19 @@ div#block-views-block-ipm-club-block-block-1  .views-field.views-field-field-clu
 }
 #block-views-block-magazines-block-1-2 .views-field.views-field-field-year{
 	margin-top: -19px;
+	width: 90px;
 }
 #block-views-block-magazines-block-1-2  .views-field.views-field-field-month{
 	margin-top: -32px;
-	width: 69px;
+	width: 89px;
+    text-align: center;
 }
 input#edit-submit-magazine-documents {
     float: left;
     margin-top: -47px;
     margin-left: 435px;
 }
-.views-view-grid.horizontal.cols-4.clearfix  .views-row.clearfix.row-1,
-.views-view-grid.horizontal.cols-4.clearfix  .views-row.clearfix.row-3 {
-    background-color: #f6f6f6;
-}
+
 .views-view-grid.horizontal.cols-4.clearfix  .views-row.clearfix.row-1,
 .views-view-grid.horizontal.cols-4.clearfix  .views-row.clearfix.row-2,
 .views-view-grid.horizontal.cols-4.clearfix  .views-row.clearfix.row-3{
@@ -2131,7 +2190,7 @@ div#block-views-block-events-calendar-block-block-1 .views-field.views-field-tit
 div#block-views-block-events-calendar-block-block-1{
 	height: 250px;
     width: 1171px;
-    background-color: #222334;
+     background-image:url("../../zircon/images/bg-2.gif");
     padding: 1%;
     margin-top: 10px;
     margin-left: -15px;
@@ -2276,18 +2335,21 @@ width: 1152px;
 	    margin-left: 1px;
 }
 .field.field--name-field-fests-club-logo.field--type-image.field--label-hidden.field__item.quickedit-field img{
-	width: 34%;
+	    width: 47%;
     margin-top: 15px;
     float: left;
+	    margin-right: 15px;
+    margin-bottom: 11px;
 }
 .field.field--name-field-fests-banner.field--type-image.field--label-hidden.field__item.quickedit-field {
-	border: 6px solid #333;
+	border: 6px solid #333 !important;
     padding: 1%;
     z-index: 20;
-    width: 1168px;
+    width: 1168px !important;
     height: 378px;
     /* position: absolute; */
     margin-left: -305px;
+	margin-bottom: 21px;
 }
 .field.field--name-field-fests-banner.field--type-image.field--label-hidden.field__item.quickedit-field img{
 	 width: 1168px;
@@ -2380,7 +2442,8 @@ div#block-aboutus span{
 }
 div#block-views-block-pgp-latest-news-events-block-1 .more-link,
 div#block-views-block-latest-news-events-ipm-block-1 .more-link {
-	margin-top:34px;
+	margin-top: -42px;
+    z-index: 200;
 }
 #panel_second .container{
 	border-radius: 0px !important; 
@@ -2390,7 +2453,8 @@ div#block-views-block-latest-news-events-ipm-block-1 .more-link {
 	min-height: 858px;
 }
 #block-views-block-pgp-latest-news-events-block-4 .more-link{
-    margin-top: 13px;
+    margin-top: -44px;
+    z-index: 200;
 }
 div#block-views-block-carousel-block-1-4 .more-link{
 	    margin-top: -42px;
@@ -2562,4 +2626,139 @@ dl.node-type-list {
 }
 dl.node-type-list dt {
     font-size: 22px;
+}
+div#block-views-block-latest-pgp-events-grid-block-1,
+div#block-views-block-latest-ipm-events-grid-block-1{	    
+  border: 1px solid #dadada;
+    height: 365px;
+    /* margin-bottom: 166px; */
+    overflow-y: auto;
+    overflow-x: hidden;
+    margin-bottom: 34px;
+	 padding-left: 16px;
+    margin-top: -30px;
+
+}
+div#block-views-block-live-project-block-1-2 .views-field.views-field-field-company-name{
+      box-shadow: 0px 0px 0px #999;
+    height: 38px;
+    width: 100%;
+    float: none;
+    padding: 11px 13%;
+    margin: 12px 0px 1px -32px;
+    font-weight: bold;
+    border: 0px !important;
+}
+#block-views-block-live-project-block-1-2 span.views-label.views-label-field-last-date-to-apply {
+    width: 42%;
+    float: left;
+    font-weight: bold;
+}
+#block-views-block-live-project-block-1-2 .views-field.views-field-field-last-date-to-apply {
+    width: 113%;
+    float: left;
+    background: #666999;
+    color: #fff;
+    margin: 30px 3px 5px -12px;
+    padding: 3%;
+    margin-bottom: 11px;
+    font-size: 13px;
+}
+#block-views-block-live-project-block-1-2  .views-field.views-field-title {
+    height: 60px;
+	font-weight: 100;
+}
+#block-views-block-live-project-block-1-2  .views-field.views-field-field-company-logo {
+    width: 35%;
+    border: 1px solid #dadada;
+    float: left;
+    margin-right: 6px;
+    height: 75px;
+    padding: 7px;
+}
+#block-views-block-live-project-block-1-2  .views-field.views-field-field-company-logo img{
+	width: 201px;
+    height: 55px;
+}
+#block-views-block-live-project-block-1-2  .views-row {
+		height: 180px;
+}
+div#block-views-block-latest-announcements-block-1 .more-link {
+    z-index: 200;
+    margin-top: -42px;
+}
+div#block-views-block-live-project-block-1-2 {
+    height: 918px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+div#block-views-block-discussion-forum-block-1 .more-link,
+div#block-views-block-discussion-forum-block-1-3 .more-link{
+    z-index: 200;
+    margin-top: -32px;
+    margin-right: 7px;
+}
+div#block-views-block-magazines-block-1-2 .more-link {
+    z-index: 200;
+    margin-top: -44px;
+}
+div#block-views-block-magazines-block-1-2 {
+    height: 386px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+div#block-views-block-projects-block-1-2{
+	 height: 386px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+.region.region-content .views-row.clearfix.row-1 ,
+.region.region-content .views-row.clearfix.row-2 ,
+.region.region-content .views-row.clearfix.row-3,
+.region.region-content .views-row.clearfix.row-4 ,
+.region.region-content .views-row.clearfix.row-5  {
+    padding-left: 14px;
+}
+div#block-views-block-latest-pgp-events-grid-block-1 .views-row.clearfix.row-1,
+#block-views-block-latest-pgp-events-grid-block-1 .views-row.clearfix.row-2,
+#block-views-block-latest-pgp-events-grid-block-1 .views-row.clearfix.row-3,
+#block-views-block-latest-pgp-events-grid-block-1 .views-row.clearfix.row-4,
+#block-views-block-latest-pgp-events-grid-block-1 .views-row.clearfix.row-5,
+#block-views-block-latest-ipm-events-grid-block-1 .views-row.clearfix.row-1,
+#block-views-block-latest-ipm-events-grid-block-1 .views-row.clearfix.row-2,
+#block-views-block-latest-ipm-events-grid-block-1 .views-row.clearfix.row-3,
+#block-views-block-latest-ipm-events-grid-block-1 .views-row.clearfix.row-4,
+#block-views-block-latest-ipm-events-grid-block-1 .views-row.clearfix.row-5,
+div#block-views-block-latest-articles-block-1 .views-row.clearfix.row-1,
+div#block-views-block-latest-articles-block-1 .views-row.clearfix.row-2,
+div#block-views-block-latest-articles-block-1 .views-row.clearfix.row-3,
+div#block-views-block-latest-articles-block-1 .views-row.clearfix.row-4,
+div#block-views-block-latest-articles-block-1 .views-row.clearfix.row-5{
+	padding-left:0;
+}
+div#block-views-block-projects-block-1-2 .views-field.views-field-field-company-logo{
+	width: 36%;
+}
+div#block-views-block-pgp-club-block-2 .views-field.views-field-title,
+div#block-views-block-ipm-club-block-2 .views-field.views-field-title{
+    text-align: center;
+    margin-left: -21px;
+    width: 177px;
+}
+.views-field.views-field-field-slogan {
+    text-align: center;
+    width: 173px;
+    margin-left: -17px;
+}
+div#block-views-block-pgp-committees-block-1 .views-field.views-field-title,
+div#block-views-block-ipm-committees-block-1  .views-field.views-field-title{
+    text-align: center;
+    width: 177px;
+}
+div#block-views-block-latest-announcements-block-1 .views-field.views-field-title {
+    font-weight: 300;
+}
+div#block-views-block-latest-pgp-events-grid-block-1 .views-field.views-field-body,
+div#block-views-block-latest-ipm-events-grid-block-1 .views-field.views-field-body {
+		width:90%;
 }

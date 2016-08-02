@@ -1021,19 +1021,19 @@ div#block-views-block-pgp-latest-news-events-block-4 .views-row,
     font-weight: bold;
 }
 .event-month {
-    margin-top: -13px;
+       margin-top: 3px;
     color: #fff;
     font-size: larger;
     text-transform: uppercase;
     text-align: center;
-    margin-left: -28px;
+    margin-left: -5px;
     width: 96%;
     font-size: 13px;
 }
 .event-date {
     font-size: 32px;
     text-align: center;
-    margin-left: -15px;
+    margin-left: 7px;
     font-weight: bold;
     margin-top: 6px;
     border-bottom: 1px solid #aaa;
@@ -1042,8 +1042,8 @@ div#block-views-block-pgp-latest-news-events-block-4 .views-row,
     line-height: 35px;
 }
 .event-year {
-    text-align: center;
-    margin-left: 4px;
+   text-align: center;
+    margin-left: 33px;
     width: 90%;
     transform: rotate(90deg);
     margin-top: -32px;
@@ -1051,12 +1051,16 @@ div#block-views-block-pgp-latest-news-events-block-4 .views-row,
 }
 
 .event-time {
-    margin-top: 1px;
+       margin-top: 1px;
     text-align: center;
     width: 58px;
     color: #6B8CD0;
     font-weight: normal;
     font-size: 18px;
+    margin-left: 7px;
+}
+div#block-views-block-latest-pgp-events-grid-block-1 .views-field.views-field-body {
+    height: 88px;
 }
 #block-socialmedialinks-2 ul li a {
     width: 50px;
@@ -1541,7 +1545,7 @@ div#block-views-block-events-calendar-block-block-1 {
     background-color: #eee;
 }
 #block-views-block-video-carousel-block-1-5 {
-    margin-top: 528px;
+    margin-top: 27px;
     padding: 6px;
     font-size: 20px;
     margin-left: -15px;
@@ -1551,6 +1555,23 @@ div#block-views-block-events-calendar-block-block-1 {
     margin-bottom: 20px;
     height: 245px;
     background-color: #eee;
+}
+#tabs2 li, #tabs8 li {
+    float: left;
+    width: 50%;
+}
+div#block-views-block-latest-pgp-events-grid-block-1 .views-field.views-field-field-sheduled-date-time, div#block-views-block-latest-ipm-events-grid-block-1 .views-field.views-field-field-sheduled-date-time {
+    width: 100%;
+    height: 122px;
+    font-family: 'Century Gothic';
+    /* float: left; */
+    background-image: url("../../zircon/images/calendar1.png") !important;
+    background-size: 100px 105px;
+    color: #333;
+    padding: 14% 0% 0% 9%;
+    margin: 0px 8px 1px -10px;
+    background-repeat: no-repeat;
+    font-weight: bold;
 }
 #block-views-block-events-calendar-block-block-1 h2 {
     font-size: 22px !important;

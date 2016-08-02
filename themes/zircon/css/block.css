@@ -47,12 +47,13 @@
 /* line 5, ../sass/block.scss */
 .site-logo {
   display: inline-block;
-  height: 39px;
+  height: 89px;
 }
 /* line 8, ../sass/block.scss */
 .site-logo img {
     width: 111px;
     margin-top: 24px;
+	margin-left: -31px;
 }
 /* line 13, ../sass/block.scss */
 .messages--status {
@@ -158,7 +159,7 @@
 #main-menu .container ul.menu {
     margin: 0;
     margin-left: 251px;
-    margin-top: -20px;
+    margin-top: -68px;
 }
 form#search-block-form {
     /* float: right; */
@@ -262,7 +263,7 @@ nav#block-headernav ul{
 nav#block-headernav li a{
 	    float: left;
     margin-top: 14px;
-    padding-left: 20px;
+    padding-left: 160px;
     font-size: 16px;
 	color: #555;
 }
@@ -832,7 +833,7 @@ div#block-views-block-latest-announcements-block-1-3 .views-field-created,
     padding: 1px 1%;
     margin: 0.7%;
 }
-}
+
 div#block-views-block-live-project-block-1 .views-field.views-field-field-company-name{
 	box-shadow: none;
     width: 100%;
@@ -862,7 +863,7 @@ span.views-field.views-field-title {
   box-shadow: 0px 0px 3px #999;
   width: 106%;
   margin-left: -3%;
-  height: 135px;
+  height: 155px;
 }
 .block-views-blockprojects-block-1 .views-field-field-company-logo img{
   width: 90%;
@@ -883,11 +884,15 @@ span.views-field.views-field-title {
 }
 .block-views-blockprojects-block-1 .views-field-field-company-logo,
 .block-views-blockprojects-block-1 .views-field-title{
-  width: 48%;
+  width: 45%;
   float: left;
+  border:0;
+  height:100px;
 }
 #block-views-block-projects-block-1-2 .views-field-title {
     margin-left: 1% !important;
+	width: 58%;
+	font-weight: 300;
 }
 #block-views-block-projects-block-1-2 .views-field.views-field-field-company-logo {
     margin-left: 1%;
@@ -1111,7 +1116,7 @@ span.views-field.views-field-title {
 }
 /* line 849, ../sass/block.scss */
 #panel_second .container {
-  background: #3c4043;
+ background-image:url("../../zircon/images/bg-2.gif");
   padding: 15px;
   color: #c9c9c9;
   width: 100%;
@@ -1266,7 +1271,7 @@ span.views-field.views-field-title {
 .user-pass label,
 #edit-account label {
   display: block;
-  color: #fff;
+  color: #333;
 }
 /* line 1003, ../sass/block.scss */
 .user-login-form .form-text,
